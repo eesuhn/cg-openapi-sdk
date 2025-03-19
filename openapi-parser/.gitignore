@@ -1,0 +1,14 @@
+# Byte-compiled
+__pycache__/
+
+# Cache
+.mypy_cache/
+.pytest_cache/
+
+# Environment
+.venv/
+.env*
+!.env.example
+
+# Mac
+.DS_Store/

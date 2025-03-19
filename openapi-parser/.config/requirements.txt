@@ -1,0 +1,18 @@
+eesuhn-sdk  # In-house package
+
+# Web-core
+requests==2.32.2
+types-requests==2.32.0.20241016
+
+# Test
+pytest==8.3.4
+
+# Linter
+pycodestyle==2.12.0
+pylint==3.3.4
+mypy==1.15.0
+
+# Misc.
+pre-commit==4.1.0
+python-dotenv==1.0.0
+pyclean==3.1.0
