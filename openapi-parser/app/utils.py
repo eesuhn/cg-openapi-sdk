@@ -23,18 +23,23 @@ def get_openapi_json(
 def load_json(
     filename: str
 ) -> dict:
-    with open(filename, "r", encoding="utf-8") as file:
-        return json.load(file)
+    with open(
+        get_package_root() / f"{filename}.json",
+        "r",
+        encoding="utf-8"
+    ) as f:
+        return json.load(f)
 
 
 def log_json(
     data: Optional[dict],
-    filename: str,
-    dest: str = "."
+    filename: str
 ) -> None:
-    path = get_package_root() / dest
-    filename = f"{filename}.json"
-    with open(path / f"{filename}", "w", encoding="utf-8") as f:
+    with open(
+        get_package_root() / f"{filename}.json",
+        "w",
+        encoding="utf-8"
+    ) as f:
         f.write(json.dumps(data, indent=2))
 
 

@@ -3,9 +3,6 @@ from .utils import (
     load_json,
     log_json
 )
-from eesuhn_sdk import (
-    print_warning
-)
 
 
 class Main:
@@ -17,28 +14,24 @@ class Main:
     def get_gt_json(
         self
     ) -> dict:
-        return get_openapi_json(
-            jsonId="6585013ec2907b0031346aa4"
-        )
+        return get_openapi_json("6585013ec2907b0031346aa4")
 
     def get_pro_json(
         self
     ) -> dict:
-        return get_openapi_json(
-            jsonId="6584ea6ce07e130056b1af99"
-        )
+        return get_openapi_json("6584ea6ce07e130056b1af99")
 
     def merge_oas_docs(
         self
     ) -> None:
-        merged_docs = load_json(
-            filename="app/docs/default.json"
+        doc = load_json(
+            filename="docs/default"
         )
-        merged_docs["paths"] = self.merge_paths()
-        merged_docs["components"]["schemas"] = self.merge_schemas()
+        doc["paths"] = self.merge_paths()
+        doc["components"]["schemas"] = self.merge_schemas()
         log_json(
-            data=merged_docs,
-            filename="docs/merged"
+            data=doc,
+            filename="docs/coingecko"
         )
 
     def merge_paths(
@@ -47,13 +40,13 @@ class Main:
         paths = {}
         for path, item in self.coingecko_pro.get("paths", {}).items():
             if path in paths:
-                print_warning(f"Duplicate path {path} found. Overwriting with coingecko-pro version.")
+                print(f"WARNING: Duplicate path {path} found. Overwriting with coingecko-pro version.")
             paths[path] = item
         for path, item in self.geckoterminal.get("paths", {}).items():
             # Prepend '/onchain' to the existing path.
             new_path = "/onchain" + path if not path.startswith("/onchain") else path
             if new_path in paths:
-                print_warning(f"Duplicate path {new_path} found. Overwriting with geckoterminal version.")
+                print(f"WARNING: Duplicate path {new_path} found. Overwriting with geckoterminal version.")
             paths[new_path] = item
         return paths
 
@@ -65,6 +58,6 @@ class Main:
             components = source.get("components", {})
             for key, schema in components.get("schemas", {}).items():
                 if key in schemas:
-                    print_warning(f"Duplicate schema {key} encountered. Overwriting previous schema.")
+                    print(f"WARNING: Duplicate schema {key} encountered. Overwriting previous schema.")
                 schemas[key] = schema
         return schemas
