@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_data_market_cap import NFTDataMarketCap
+from coingecko_python.models.nft_data_market_cap import NFTDataMarketCap
 
 class TestNFTDataMarketCap(unittest.TestCase):
     """NFTDataMarketCap unit test stubs"""

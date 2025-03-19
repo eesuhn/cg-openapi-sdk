@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.exchange_rates import ExchangeRates
+from coingecko_python.models.exchange_rates import ExchangeRates
 
 class TestExchangeRates(unittest.TestCase):
     """ExchangeRates unit test stubs"""
@@ -36,7 +36,7 @@ class TestExchangeRates(unittest.TestCase):
         if include_optional:
             return ExchangeRates(
                 rates = {
-                    'key' : coingecko_sdk.models.exchange_rates_rates_value.ExchangeRates_rates_value(
+                    'key' : coingecko_python.models.exchange_rates_rates_value.ExchangeRates_rates_value(
                         name = '', 
                         unit = '', 
                         value = 1.337, 

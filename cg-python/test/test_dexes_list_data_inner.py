@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.dexes_list_data_inner import DexesListDataInner
+from coingecko_python.models.dexes_list_data_inner import DexesListDataInner
 
 class TestDexesListDataInner(unittest.TestCase):
     """DexesListDataInner unit test stubs"""
@@ -37,7 +37,7 @@ class TestDexesListDataInner(unittest.TestCase):
             return DexesListDataInner(
                 id = '',
                 type = '',
-                attributes = coingecko_sdk.models.dexes_list_data_inner_attributes.DexesList_data_inner_attributes(
+                attributes = coingecko_python.models.dexes_list_data_inner_attributes.DexesList_data_inner_attributes(
                     name = '', )
             )
         else:

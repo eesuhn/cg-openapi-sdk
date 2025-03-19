@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_list_new_inner import CoinsListNewInner
+from coingecko_python.models.coins_list_new_inner import CoinsListNewInner
 
 class TestCoinsListNewInner(unittest.TestCase):
     """CoinsListNewInner unit test stubs"""

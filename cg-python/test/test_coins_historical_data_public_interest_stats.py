@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_historical_data_public_interest_stats import CoinsHistoricalDataPublicInterestStats
+from coingecko_python.models.coins_historical_data_public_interest_stats import CoinsHistoricalDataPublicInterestStats
 
 class TestCoinsHistoricalDataPublicInterestStats(unittest.TestCase):
     """CoinsHistoricalDataPublicInterestStats unit test stubs"""

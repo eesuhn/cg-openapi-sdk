@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.exchange_rates_rates_value import ExchangeRatesRatesValue
+from coingecko_python.models.exchange_rates_rates_value import ExchangeRatesRatesValue
 
 class TestExchangeRatesRatesValue(unittest.TestCase):
     """ExchangeRatesRatesValue unit test stubs"""

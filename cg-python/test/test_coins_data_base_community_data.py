@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_community_data import CoinsDataBaseCommunityData
+from coingecko_python.models.coins_data_base_community_data import CoinsDataBaseCommunityData
 
 class TestCoinsDataBaseCommunityData(unittest.TestCase):
     """CoinsDataBaseCommunityData unit test stubs"""

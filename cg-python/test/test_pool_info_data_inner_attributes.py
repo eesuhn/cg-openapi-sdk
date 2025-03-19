@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.pool_info_data_inner_attributes import PoolInfoDataInnerAttributes
+from coingecko_python.models.pool_info_data_inner_attributes import PoolInfoDataInnerAttributes
 
 class TestPoolInfoDataInnerAttributes(unittest.TestCase):
     """PoolInfoDataInnerAttributes unit test stubs"""
@@ -46,18 +46,18 @@ class TestPoolInfoDataInnerAttributes(unittest.TestCase):
                 pool_created_at = '',
                 fdv_usd = '',
                 market_cap_usd = '',
-                price_change_percentage = coingecko_sdk.models.pool_data_inner_attributes_price_change_percentage.Pool_data_inner_attributes_price_change_percentage(
+                price_change_percentage = coingecko_python.models.pool_data_inner_attributes_price_change_percentage.Pool_data_inner_attributes_price_change_percentage(
                     m5 = '', 
                     h1 = '', 
                     h6 = '', 
                     h24 = '', ),
-                transactions = coingecko_sdk.models.pool_info_data_inner_attributes_transactions.PoolInfo_data_inner_attributes_transactions(
-                    m5 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                transactions = coingecko_python.models.pool_info_data_inner_attributes_transactions.PoolInfo_data_inner_attributes_transactions(
+                    m5 = coingecko_python.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                         buys = 56, 
                         sells = 56, 
                         buyers = 56, 
                         sellers = 56, ), 
-                    m15 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                    m15 = coingecko_python.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                         buys = 56, 
                         sells = 56, 
                         buyers = 56, 
@@ -66,7 +66,7 @@ class TestPoolInfoDataInnerAttributes(unittest.TestCase):
                     h1 = , 
                     h6 = , 
                     h24 = , ),
-                volume_usd = coingecko_sdk.models.pool_info_data_inner_attributes_volume_usd.PoolInfo_data_inner_attributes_volume_usd(
+                volume_usd = coingecko_python.models.pool_info_data_inner_attributes_volume_usd.PoolInfo_data_inner_attributes_volume_usd(
                     m5 = '', 
                     m15 = '', 
                     m30 = '', 

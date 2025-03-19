@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.trending_search_coins_inner_data_price_change_percentage24h import TrendingSearchCoinsInnerDataPriceChangePercentage24h
+from coingecko_python.models.trending_search_coins_inner_data_price_change_percentage24h import TrendingSearchCoinsInnerDataPriceChangePercentage24h
 
 class TestTrendingSearchCoinsInnerDataPriceChangePercentage24h(unittest.TestCase):
     """TrendingSearchCoinsInnerDataPriceChangePercentage24h unit test stubs"""

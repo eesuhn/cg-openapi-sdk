@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.derivatives_exchanges_list import DerivativesExchangesList
+from coingecko_python.models.derivatives_exchanges_list import DerivativesExchangesList
 
 class TestDerivativesExchangesList(unittest.TestCase):
     """DerivativesExchangesList unit test stubs"""

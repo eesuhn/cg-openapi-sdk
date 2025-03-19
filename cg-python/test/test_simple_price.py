@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.simple_price import SimplePrice
+from coingecko_python.models.simple_price import SimplePrice
 
 class TestSimplePrice(unittest.TestCase):
     """SimplePrice unit test stubs"""

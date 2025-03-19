@@ -1,4 +1,4 @@
-# coingecko_sdk.ContractApi
+# coingecko_python.ContractApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -22,14 +22,14 @@ This endpoint allows you to **query all the metadata (image,  websites, socials,
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_contract_address import CoinsContractAddress
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_contract_address import CoinsContractAddress
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -51,9 +51,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ContractApi(api_client)
+    api_instance = coingecko_python.ContractApi(api_client)
     id = 'ethereum' # str | asset platform ID <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list).
     contract_address = '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48' # str | the contract address of token
 
@@ -110,14 +110,14 @@ This endpoint allows you to **get the historical chart data including time in UN
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_market_chart import CoinsMarketChart
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_market_chart import CoinsMarketChart
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -139,9 +139,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ContractApi(api_client)
+    api_instance = coingecko_python.ContractApi(api_client)
     id = 'ethereum' # str | asset platform ID <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list).
     contract_address = '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48' # str | the contract address of token
     vs_currency = 'usd' # str | target currency of market data <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
@@ -206,14 +206,14 @@ This endpoint allows you to **get the historical chart data within certain time 
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_market_chart_range import CoinsMarketChartRange
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_market_chart_range import CoinsMarketChartRange
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -235,9 +235,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ContractApi(api_client)
+    api_instance = coingecko_python.ContractApi(api_client)
     id = 'ethereum' # str | asset platform ID <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list)
     contract_address = '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48' # str | the contract address of token
     vs_currency = 'usd' # str | target currency of market data <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).

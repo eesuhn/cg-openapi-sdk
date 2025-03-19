@@ -1,4 +1,4 @@
-# coingecko_sdk.CoinsApi
+# coingecko_python.CoinsApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -34,14 +34,14 @@ This endpoint allows you to **query all the metadata (image,  websites, socials,
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_id import CoinsID
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_id import CoinsID
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -63,9 +63,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     localization = True # bool | include all the localized languages in the response, default: true (optional)
     tickers = True # bool | include tickers data, default: true (optional)
@@ -132,13 +132,13 @@ This endpoint allows you to **query historical circulating supply of a coin by n
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -160,9 +160,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     days = '1' # str | data up to number of days ago <br> Valid values: any integer or `max`
     interval = 'interval_example' # str | data interval (optional)
@@ -221,13 +221,13 @@ This endpoint allows you to **query historical circulating supply of a coin, wit
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -249,9 +249,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     var_from = 1609459200 # float | starting date in UNIX timestamp 
     to = 1640908800 # float | ending date in UNIX timestamp 
@@ -310,14 +310,14 @@ This endpoint allows you to **query the historical data (price, market cap, 24hr
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_historical_data import CoinsHistoricalData
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_historical_data import CoinsHistoricalData
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -339,9 +339,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     var_date = '30-12-2017' # str | the date of data snapshot <br> Format: `dd-mm-yyyy`
     localization = True # bool | include all the localized languages in response, default: true (optional)
@@ -400,14 +400,14 @@ This endpoint allows you to **get the historical chart data of a coin including 
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_market_chart import CoinsMarketChart
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_market_chart import CoinsMarketChart
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -429,9 +429,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     vs_currency = 'usd' # str | target currency of market data <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
     days = '1' # str | data up to number of days ago <br> You may use any integer or `max` for number of days
@@ -494,14 +494,14 @@ This endpoint allows you to **get the historical chart data of a coin within cer
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_market_chart_range import CoinsMarketChartRange
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_market_chart_range import CoinsMarketChartRange
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -523,9 +523,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     vs_currency = 'usd' # str | target currency of market data <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
     var_from = 1609459200 # float | starting date in UNIX timestamp 
@@ -590,13 +590,13 @@ This endpoint allows you to **get the OHLC chart (Open, High, Low, Close) of a c
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -618,9 +618,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     vs_currency = 'usd' # str | target currency of price data <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
     days = 'days_example' # str | data up to number of days ago 
@@ -683,13 +683,13 @@ This endpoint allows you to **get the OHLC chart (Open, High, Low, Close) of a c
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -711,9 +711,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     vs_currency = 'usd' # str | target currency of price data <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
     var_from = 1709251200 # float | starting date in UNIX timestamp
@@ -776,14 +776,14 @@ This endpoint allows you to **query the coin tickers on both centralized exchang
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_tickers import CoinsTickers
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_tickers import CoinsTickers
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -805,9 +805,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     exchange_ids = 'binance' # str | exchange ID <br> *refers to [`/exchanges/list`](/reference/exchanges-list). (optional)
     include_exchange_logo = True # bool | include exchange logo, default: false (optional)
@@ -872,13 +872,13 @@ This endpoint allows you to **query historical total supply of a coin by number 
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -900,9 +900,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     days = '1' # str | data up to number of days ago <br> Valid values: any integer or `max`
     interval = 'interval_example' # str | data interval (optional)
@@ -961,13 +961,13 @@ This endpoint allows you to **query historical total supply of a coin, within a 
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -989,9 +989,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     id = 'bitcoin' # str | coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
     var_from = 1609459200 # float | starting date in UNIX timestamp 
     to = 1640908800 # float | ending date in UNIX timestamp 
@@ -1050,14 +1050,14 @@ This endpoint allows you to **query all the supported coins on CoinGecko with co
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_list_inner import CoinsListInner
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_list_inner import CoinsListInner
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -1079,9 +1079,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     include_platform = True # bool | include platform and token's contract addresses, default: false (optional)
     status = 'status_example' # str | filter by status of coins, default: active (optional)
 
@@ -1138,14 +1138,14 @@ This endpoint allows you to **query the latest 200 coins that recently listed on
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_list_new_inner import CoinsListNewInner
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_list_new_inner import CoinsListNewInner
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -1167,9 +1167,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
 
     try:
         # 💼 Recently Added Coins
@@ -1220,14 +1220,14 @@ This endpoint allows you to **query all the supported coins with price, market c
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.coins_markets import CoinsMarkets
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.coins_markets import CoinsMarkets
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -1249,9 +1249,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     vs_currency = 'usd' # str | target currency of coins and market data <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
     ids = 'bitcoin' # str | coins' IDs, comma-separated if querying more than 1 coin. <br> *refers to [`/coins/list`](/reference/coins-list). (optional)
     category = 'layer-1' # str | filter based on coins' category <br> *refers to [`/coins/categories/list`](/reference/coins-categories-list). (optional)
@@ -1324,14 +1324,14 @@ This endpoint allows you to **query the top 30 coins with largest price gain and
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.top_gainers_losers_inner import TopGainersLosersInner
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.top_gainers_losers_inner import TopGainersLosersInner
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -1353,9 +1353,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CoinsApi(api_client)
+    api_instance = coingecko_python.CoinsApi(api_client)
     vs_currency = 'usd' # str | target currency of coins <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
     duration = 'duration_example' # str | filter result by time range <br> Default value: `24h` (optional)
     top_coins = 'top_coins_example' # str | filter result by market cap ranking (top 300 to 1000) or all coins (including coins that do not have market cap) <br> Default value: `1000` (optional)

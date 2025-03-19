@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_market_data_market_cap_change24h_in_currency import CoinsDataBaseMarketDataMarketCapChange24hInCurrency
+from coingecko_python.models.coins_data_base_market_data_market_cap_change24h_in_currency import CoinsDataBaseMarketDataMarketCapChange24hInCurrency
 
 class TestCoinsDataBaseMarketDataMarketCapChange24hInCurrency(unittest.TestCase):
     """CoinsDataBaseMarketDataMarketCapChange24hInCurrency unit test stubs"""

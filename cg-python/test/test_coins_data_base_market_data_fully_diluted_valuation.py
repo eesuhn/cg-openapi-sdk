@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_market_data_fully_diluted_valuation import CoinsDataBaseMarketDataFullyDilutedValuation
+from coingecko_python.models.coins_data_base_market_data_fully_diluted_valuation import CoinsDataBaseMarketDataFullyDilutedValuation
 
 class TestCoinsDataBaseMarketDataFullyDilutedValuation(unittest.TestCase):
     """CoinsDataBaseMarketDataFullyDilutedValuation unit test stubs"""

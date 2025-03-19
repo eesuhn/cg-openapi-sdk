@@ -1,4 +1,4 @@
-# coingecko_sdk.ExchangesApi
+# coingecko_python.ExchangesApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -25,14 +25,14 @@ This endpoint allows you to **query all the supported exchanges with exchanges�
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.exchanges import Exchanges
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.exchanges import Exchanges
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -54,9 +54,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ExchangesApi(api_client)
+    api_instance = coingecko_python.ExchangesApi(api_client)
     per_page = 3.4 # float | total results per page, default: 100 <br> Valid values: 1...250 (optional)
     page = 3.4 # float | page through results, default: 1 (optional)
 
@@ -113,14 +113,14 @@ This endpoint allows you to **query exchange’s data (name, year established, c
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.exchange_data import ExchangeData
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.exchange_data import ExchangeData
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -142,9 +142,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ExchangesApi(api_client)
+    api_instance = coingecko_python.ExchangesApi(api_client)
     id = 'binance' # str | exchange ID <br> *refers to [`/exchanges/list`](/reference/exchanges-list).
 
     try:
@@ -199,14 +199,14 @@ This endpoint allows you to **query exchange's tickers based on exchange’s ID*
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.exchange_tickers import ExchangeTickers
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.exchange_tickers import ExchangeTickers
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -228,9 +228,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ExchangesApi(api_client)
+    api_instance = coingecko_python.ExchangesApi(api_client)
     id = 'binance' # str | exchange ID <br> *refers to [`/exchanges/list`](/reference/exchanges-list).
     coin_ids = 'bitcoin' # str | filter tickers by coin IDs, comma-separated if querying more than 1 coin <br> *refers to [`/coins/list`](/reference/coins-list). (optional)
     include_exchange_logo = True # bool | include exchange logo, default: false (optional)
@@ -295,13 +295,13 @@ This endpoint allows you to **query the historical volume chart data with time i
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -323,9 +323,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ExchangesApi(api_client)
+    api_instance = coingecko_python.ExchangesApi(api_client)
     id = 'binance' # str | exchange ID or derivative exchange ID <br> *refers to [`/exchanges/list`](/reference/exchanges-list) or [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
     days = 'days_example' # str | data up to number of days ago
 
@@ -382,13 +382,13 @@ This endpoint allows you to **query the historical volume chart data in BTC by s
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -410,9 +410,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ExchangesApi(api_client)
+    api_instance = coingecko_python.ExchangesApi(api_client)
     id = 'binance' # str | exchange ID or derivative exchange ID <br> *refers to [`/exchanges/list`](/reference/exchanges-list) or [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
     var_from = 1672531200 # float | starting date in UNIX timestamp 
     to = 1675123200 # float | ending date in UNIX timestamp
@@ -471,14 +471,14 @@ This endpoint allows you to **query all the exchanges with ID and name**
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.exchanges_list import ExchangesList
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.exchanges_list import ExchangesList
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -500,9 +500,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.ExchangesApi(api_client)
+    api_instance = coingecko_python.ExchangesApi(api_client)
     status = 'status_example' # str | filter by status of exchanges, default: active (optional)
 
     try:

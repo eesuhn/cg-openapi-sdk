@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_tickers import NFTTickers
+from coingecko_python.models.nft_tickers import NFTTickers
 
 class TestNFTTickers(unittest.TestCase):
     """NFTTickers unit test stubs"""
@@ -36,7 +36,7 @@ class TestNFTTickers(unittest.TestCase):
         if include_optional:
             return NFTTickers(
                 tickers = [
-                    coingecko_sdk.models.nft_tickers_tickers_inner.NFTTickers_tickers_inner(
+                    coingecko_python.models.nft_tickers_tickers_inner.NFTTickers_tickers_inner(
                         floor_price_in_native_currency = 1.337, 
                         h24_volume_in_native_currency = 1.337, 
                         native_currency = '', 

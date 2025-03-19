@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.onchain_simple_price_data import OnchainSimplePriceData
+from coingecko_python.models.onchain_simple_price_data import OnchainSimplePriceData
 
 class TestOnchainSimplePriceData(unittest.TestCase):
     """OnchainSimplePriceData unit test stubs"""
@@ -37,7 +37,7 @@ class TestOnchainSimplePriceData(unittest.TestCase):
             return OnchainSimplePriceData(
                 id = '',
                 type = '',
-                attributes = coingecko_sdk.models.onchain_simple_price_data_attributes.OnchainSimplePrice_data_attributes(
+                attributes = coingecko_python.models.onchain_simple_price_data_attributes.OnchainSimplePrice_data_attributes(
                     token_prices = {
                         'key' : ''
                         }, )

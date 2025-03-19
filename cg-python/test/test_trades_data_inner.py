@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.trades_data_inner import TradesDataInner
+from coingecko_python.models.trades_data_inner import TradesDataInner
 
 class TestTradesDataInner(unittest.TestCase):
     """TradesDataInner unit test stubs"""
@@ -37,7 +37,7 @@ class TestTradesDataInner(unittest.TestCase):
             return TradesDataInner(
                 id = '',
                 type = '',
-                attributes = coingecko_sdk.models.trades_data_inner_attributes.Trades_data_inner_attributes(
+                attributes = coingecko_python.models.trades_data_inner_attributes.Trades_data_inner_attributes(
                     block_number = 56, 
                     tx_hash = '', 
                     tx_from_address = '', 

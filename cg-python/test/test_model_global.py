@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.model_global import ModelGlobal
+from coingecko_python.models.model_global import ModelGlobal
 
 class TestModelGlobal(unittest.TestCase):
     """ModelGlobal unit test stubs"""
@@ -35,19 +35,19 @@ class TestModelGlobal(unittest.TestCase):
         model = ModelGlobal()
         if include_optional:
             return ModelGlobal(
-                data = coingecko_sdk.models.global_data.Global_data(
+                data = coingecko_python.models.global_data.Global_data(
                     active_cryptocurrencies = 1.337, 
                     upcoming_icos = 1.337, 
                     ongoing_icos = 1.337, 
                     ended_icos = 1.337, 
                     markets = 1.337, 
-                    total_market_cap = coingecko_sdk.models.global_data_total_market_cap.Global_data_total_market_cap(
+                    total_market_cap = coingecko_python.models.global_data_total_market_cap.Global_data_total_market_cap(
                         btc = 1.337, 
                         eth = 1.337, ), 
-                    total_volume = coingecko_sdk.models.global_data_total_volume.Global_data_total_volume(
+                    total_volume = coingecko_python.models.global_data_total_volume.Global_data_total_volume(
                         btc = 1.337, 
                         eth = 1.337, ), 
-                    market_cap_percentage = coingecko_sdk.models.global_data_market_cap_percentage.Global_data_market_cap_percentage(
+                    market_cap_percentage = coingecko_python.models.global_data_market_cap_percentage.Global_data_market_cap_percentage(
                         btc = 1.337, 
                         eth = 1.337, ), ),
                 market_cap_change_percentage_24h_usd = 1.337,

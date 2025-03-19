@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_links_repos_url import CoinsDataBaseLinksReposUrl
+from coingecko_python.models.coins_data_base_links_repos_url import CoinsDataBaseLinksReposUrl
 
 class TestCoinsDataBaseLinksReposUrl(unittest.TestCase):
     """CoinsDataBaseLinksReposUrl unit test stubs"""

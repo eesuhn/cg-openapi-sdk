@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.ping import Ping
+from coingecko_python.models.ping import Ping
 
 class TestPing(unittest.TestCase):
     """Ping unit test stubs"""

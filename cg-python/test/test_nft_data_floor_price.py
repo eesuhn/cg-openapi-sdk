@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_data_floor_price import NFTDataFloorPrice
+from coingecko_python.models.nft_data_floor_price import NFTDataFloorPrice
 
 class TestNFTDataFloorPrice(unittest.TestCase):
     """NFTDataFloorPrice unit test stubs"""

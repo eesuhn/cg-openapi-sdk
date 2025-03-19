@@ -1,4 +1,4 @@
-# coingecko_sdk.DexesApi
+# coingecko_python.DexesApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -20,14 +20,14 @@ This endpoint allows you to **query all the supported decentralized exchanges (D
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.dexes_list import DexesList
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.dexes_list import DexesList
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -49,9 +49,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.DexesApi(api_client)
+    api_instance = coingecko_python.DexesApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     page = 56 # int | page through results <br> Default value: 1 (optional)
 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.token_info_data_attributes_holders import TokenInfoDataAttributesHolders
+from coingecko_python.models.token_info_data_attributes_holders import TokenInfoDataAttributesHolders
 
 class TestTokenInfoDataAttributesHolders(unittest.TestCase):
     """TokenInfoDataAttributesHolders unit test stubs"""
@@ -36,7 +36,7 @@ class TestTokenInfoDataAttributesHolders(unittest.TestCase):
         if include_optional:
             return TokenInfoDataAttributesHolders(
                 count = 56,
-                distribution_percentage = coingecko_sdk.models.token_info_data_attributes_holders_distribution_percentage.TokenInfo_data_attributes_holders_distribution_percentage(
+                distribution_percentage = coingecko_python.models.token_info_data_attributes_holders_distribution_percentage.TokenInfo_data_attributes_holders_distribution_percentage(
                     top_10 = 1.337, 
                     11_30 = 1.337, 
                     31_50 = 1.337, 

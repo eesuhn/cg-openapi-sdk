@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.ohlcv_meta_base import OHLCVMetaBase
+from coingecko_python.models.ohlcv_meta_base import OHLCVMetaBase
 
 class TestOHLCVMetaBase(unittest.TestCase):
     """OHLCVMetaBase unit test stubs"""

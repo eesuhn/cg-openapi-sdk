@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.nft_market_chart import NFTMarketChart
+from coingecko_python.models.nft_market_chart import NFTMarketChart
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.global_de_fi import GlobalDeFi
+from coingecko_python.models.global_de_fi import GlobalDeFi
 
 class TestGlobalDeFi(unittest.TestCase):
     """GlobalDeFi unit test stubs"""
@@ -35,7 +35,7 @@ class TestGlobalDeFi(unittest.TestCase):
         model = GlobalDeFi()
         if include_optional:
             return GlobalDeFi(
-                data = coingecko_sdk.models.global_de_fi_data.GlobalDeFi_data(
+                data = coingecko_python.models.global_de_fi_data.GlobalDeFi_data(
                     defi_market_cap = '', 
                     eth_market_cap = '', 
                     defi_to_eth_ratio = '', 

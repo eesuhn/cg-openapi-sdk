@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.networks_list import NetworksList
+from coingecko_python.models.networks_list import NetworksList
 
 class TestNetworksList(unittest.TestCase):
     """NetworksList unit test stubs"""
@@ -36,10 +36,10 @@ class TestNetworksList(unittest.TestCase):
         if include_optional:
             return NetworksList(
                 data = [
-                    coingecko_sdk.models.networks_list_data_inner.NetworksList_data_inner(
+                    coingecko_python.models.networks_list_data_inner.NetworksList_data_inner(
                         id = '', 
                         type = '', 
-                        attributes = coingecko_sdk.models.networks_list_data_inner_attributes.NetworksList_data_inner_attributes(
+                        attributes = coingecko_python.models.networks_list_data_inner_attributes.NetworksList_data_inner_attributes(
                             name = '', 
                             coingecko_asset_platform_id = '', ), )
                     ]

@@ -1,4 +1,4 @@
-# coingecko_sdk.GlobalApi
+# coingecko_python.GlobalApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -22,14 +22,14 @@ This endpoint allows you **query cryptocurrency global data including active cry
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.model_global import ModelGlobal
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.model_global import ModelGlobal
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -51,9 +51,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.GlobalApi(api_client)
+    api_instance = coingecko_python.GlobalApi(api_client)
 
     try:
         # Crypto Global Market Data
@@ -104,14 +104,14 @@ This endpoint allows you **query top 100 cryptocurrency global decentralized fin
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.global_de_fi import GlobalDeFi
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.global_de_fi import GlobalDeFi
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -133,9 +133,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.GlobalApi(api_client)
+    api_instance = coingecko_python.GlobalApi(api_client)
 
     try:
         # Global De-Fi Market Data
@@ -186,14 +186,14 @@ This endpoint allows you to **query historical global market cap and volume data
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.global_market_cap_chart import GlobalMarketCapChart
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.global_market_cap_chart import GlobalMarketCapChart
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -215,9 +215,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.GlobalApi(api_client)
+    api_instance = coingecko_python.GlobalApi(api_client)
     days = 'days_example' # str | data up to number of days ago <br> Valid values: any integer
     vs_currency = 'usd' # str | target currency of market cap, default: usd <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies) (optional)
 

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.nft_data_ath_change_percentage import NFTDataAthChangePercentage
+from coingecko_python.models.nft_data_ath_change_percentage import NFTDataAthChangePercentage
 
 # TODO update the JSON string below
 json = "{}"

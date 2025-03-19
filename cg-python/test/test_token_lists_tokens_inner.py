@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.token_lists_tokens_inner import TokenListsTokensInner
+from coingecko_python.models.token_lists_tokens_inner import TokenListsTokensInner
 
 class TestTokenListsTokensInner(unittest.TestCase):
     """TokenListsTokensInner unit test stubs"""

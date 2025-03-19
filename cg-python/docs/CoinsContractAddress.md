@@ -37,7 +37,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.coins_contract_address import CoinsContractAddress
+from coingecko_python.models.coins_contract_address import CoinsContractAddress
 
 # TODO update the JSON string below
 json = "{}"

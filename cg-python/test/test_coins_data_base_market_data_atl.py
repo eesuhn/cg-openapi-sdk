@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_market_data_atl import CoinsDataBaseMarketDataAtl
+from coingecko_python.models.coins_data_base_market_data_atl import CoinsDataBaseMarketDataAtl
 
 class TestCoinsDataBaseMarketDataAtl(unittest.TestCase):
     """CoinsDataBaseMarketDataAtl unit test stubs"""

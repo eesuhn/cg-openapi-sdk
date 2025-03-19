@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.pool_data_inner_attributes_price_change_percentage import PoolDataInnerAttributesPriceChangePercentage
+from coingecko_python.models.pool_data_inner_attributes_price_change_percentage import PoolDataInnerAttributesPriceChangePercentage
 
 class TestPoolDataInnerAttributesPriceChangePercentage(unittest.TestCase):
     """PoolDataInnerAttributesPriceChangePercentage unit test stubs"""

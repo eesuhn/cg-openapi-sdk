@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.global_de_fi_data import GlobalDeFiData
+from coingecko_python.models.global_de_fi_data import GlobalDeFiData
 
 class TestGlobalDeFiData(unittest.TestCase):
     """GlobalDeFiData unit test stubs"""

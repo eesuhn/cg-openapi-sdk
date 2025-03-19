@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.categories_pools_data_inner_attributes import CategoriesPoolsDataInnerAttributes
+from coingecko_python.models.categories_pools_data_inner_attributes import CategoriesPoolsDataInnerAttributes
 
 class TestCategoriesPoolsDataInnerAttributes(unittest.TestCase):
     """CategoriesPoolsDataInnerAttributes unit test stubs"""
@@ -46,7 +46,7 @@ class TestCategoriesPoolsDataInnerAttributes(unittest.TestCase):
                 pool_created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 fdv_usd = '',
                 market_cap_usd = '',
-                price_change_percentage = coingecko_sdk.models.pool_data_inner_attributes_price_change_percentage.Pool_data_inner_attributes_price_change_percentage(
+                price_change_percentage = coingecko_python.models.pool_data_inner_attributes_price_change_percentage.Pool_data_inner_attributes_price_change_percentage(
                     m5 = '', 
                     h1 = '', 
                     h6 = '', 

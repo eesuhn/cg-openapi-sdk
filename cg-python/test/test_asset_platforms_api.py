@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.api.asset_platforms_api import AssetPlatformsApi
+from coingecko_python.api.asset_platforms_api import AssetPlatformsApi
 
 
 class TestAssetPlatformsApi(unittest.TestCase):

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.companies_treasury_companies_inner import CompaniesTreasuryCompaniesInner
+from coingecko_python.models.companies_treasury_companies_inner import CompaniesTreasuryCompaniesInner
 
 class TestCompaniesTreasuryCompaniesInner(unittest.TestCase):
     """CompaniesTreasuryCompaniesInner unit test stubs"""

@@ -1,4 +1,4 @@
-# coingecko_sdk.CategoriesApi
+# coingecko_python.CategoriesApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -23,14 +23,14 @@ This endpoint allows you to **query all the supported categories on GeckoTermina
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.onchain_categories_list import OnchainCategoriesList
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.onchain_categories_list import OnchainCategoriesList
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -52,9 +52,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CategoriesApi(api_client)
+    api_instance = coingecko_python.CategoriesApi(api_client)
     page = 56 # int | page through results <br> Default value: `1` (optional)
     sort = 'sort_example' # str | sort the categories by field <br> Default value: `h6_volume_percentage_desc` (optional)
 
@@ -111,14 +111,14 @@ This endpoint allows you to **query all the coins categories with market data (m
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.categories import Categories
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.categories import Categories
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -140,9 +140,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CategoriesApi(api_client)
+    api_instance = coingecko_python.CategoriesApi(api_client)
     order = 'order_example' # str | sort results by field, default: market_cap_desc (optional)
 
     try:
@@ -197,14 +197,14 @@ This endpoint allows you to **query all the coins categories on CoinGecko**
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.categories_list import CategoriesList
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.categories_list import CategoriesList
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -226,9 +226,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CategoriesApi(api_client)
+    api_instance = coingecko_python.CategoriesApi(api_client)
 
     try:
         # Coins Categories List (ID Map)
@@ -279,14 +279,14 @@ This endpoint allows you to **query all the pools based on the provided category
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.categories_pools import CategoriesPools
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.categories_pools import CategoriesPools
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -308,9 +308,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.CategoriesApi(api_client)
+    api_instance = coingecko_python.CategoriesApi(api_client)
     category_id = 'pump-fun' # str | category ID
     include = 'include_example' # str | attributes to include, comma-separated if more than one to include <br> Available values: `base_token`, `quote_token`, `dex`, `network`. <br> Example: `base_token` or `base_token,dex` (optional)
     page = 56 # int | page through results <br> Default value: `1` (optional)

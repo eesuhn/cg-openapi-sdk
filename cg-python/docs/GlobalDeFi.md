@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.global_de_fi import GlobalDeFi
+from coingecko_python.models.global_de_fi import GlobalDeFi
 
 # TODO update the JSON string below
 json = "{}"

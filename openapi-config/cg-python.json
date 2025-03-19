@@ -1,6 +1,6 @@
 {
-  "packageName": "coingecko_sdk",
+  "packageName": "coingecko_python",
   "packageVersion": "1.0.0",
-  "projectName": "coingecko-sdk",
+  "projectName": "coingecko-python",
   "generateSourceCodeOnly": false
 }

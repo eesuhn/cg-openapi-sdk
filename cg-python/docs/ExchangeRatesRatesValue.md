@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.exchange_rates_rates_value import ExchangeRatesRatesValue
+from coingecko_python.models.exchange_rates_rates_value import ExchangeRatesRatesValue
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.trending_search_categories_inner_data_market_cap_change_percentage24h import TrendingSearchCategoriesInnerDataMarketCapChangePercentage24h
+from coingecko_python.models.trending_search_categories_inner_data_market_cap_change_percentage24h import TrendingSearchCategoriesInnerDataMarketCapChangePercentage24h
 
 class TestTrendingSearchCategoriesInnerDataMarketCapChangePercentage24h(unittest.TestCase):
     """TrendingSearchCategoriesInnerDataMarketCapChangePercentage24h unit test stubs"""

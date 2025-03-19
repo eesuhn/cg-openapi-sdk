@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_market_chart import NFTMarketChart
+from coingecko_python.models.nft_market_chart import NFTMarketChart
 
 class TestNFTMarketChart(unittest.TestCase):
     """NFTMarketChart unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_tickers_inner import CoinsDataBaseTickersInner
+from coingecko_python.models.coins_data_base_tickers_inner import CoinsDataBaseTickersInner
 
 class TestCoinsDataBaseTickersInner(unittest.TestCase):
     """CoinsDataBaseTickersInner unit test stubs"""
@@ -37,17 +37,17 @@ class TestCoinsDataBaseTickersInner(unittest.TestCase):
             return CoinsDataBaseTickersInner(
                 base = '',
                 target = '',
-                market = coingecko_sdk.models.coins_data_base_tickers_inner_market.CoinsDataBase_tickers_inner_market(
+                market = coingecko_python.models.coins_data_base_tickers_inner_market.CoinsDataBase_tickers_inner_market(
                     name = '', 
                     identifier = '', 
                     has_trading_incentive = True, ),
                 last = 1.337,
                 volume = 1.337,
-                converted_last = coingecko_sdk.models.coins_data_base_tickers_inner_converted_last.CoinsDataBase_tickers_inner_converted_last(
+                converted_last = coingecko_python.models.coins_data_base_tickers_inner_converted_last.CoinsDataBase_tickers_inner_converted_last(
                     btc = 1.337, 
                     eth = 1.337, 
                     usd = 1.337, ),
-                converted_volume = coingecko_sdk.models.coins_data_base_tickers_inner_converted_volume.CoinsDataBase_tickers_inner_converted_volume(
+                converted_volume = coingecko_python.models.coins_data_base_tickers_inner_converted_volume.CoinsDataBase_tickers_inner_converted_volume(
                     btc = 1.337, 
                     eth = 1.337, 
                     usd = 1.337, ),

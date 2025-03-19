@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.token_info_data_attributes_holders_distribution_percentage import TokenInfoDataAttributesHoldersDistributionPercentage
+from coingecko_python.models.token_info_data_attributes_holders_distribution_percentage import TokenInfoDataAttributesHoldersDistributionPercentage
 
 class TestTokenInfoDataAttributesHoldersDistributionPercentage(unittest.TestCase):
     """TokenInfoDataAttributesHoldersDistributionPercentage unit test stubs"""

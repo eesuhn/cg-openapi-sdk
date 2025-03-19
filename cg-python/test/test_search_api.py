@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.api.search_api import SearchApi
+from coingecko_python.api.search_api import SearchApi
 
 
 class TestSearchApi(unittest.TestCase):

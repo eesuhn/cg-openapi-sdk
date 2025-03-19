@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.simple_price import SimplePrice
+from coingecko_python.models.simple_price import SimplePrice
 
 # TODO update the JSON string below
 json = "{}"

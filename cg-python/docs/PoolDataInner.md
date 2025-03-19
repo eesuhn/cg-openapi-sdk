@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.pool_data_inner import PoolDataInner
+from coingecko_python.models.pool_data_inner import PoolDataInner
 
 # TODO update the JSON string below
 json = "{}"

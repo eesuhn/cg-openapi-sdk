@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.companies_treasury import CompaniesTreasury
+from coingecko_python.models.companies_treasury import CompaniesTreasury
 
 class TestCompaniesTreasury(unittest.TestCase):
     """CompaniesTreasury unit test stubs"""
@@ -39,7 +39,7 @@ class TestCompaniesTreasury(unittest.TestCase):
                 total_value_usd = 1.337,
                 market_cap_dominance = 1.337,
                 companies = [
-                    coingecko_sdk.models.companies_treasury_companies_inner.CompaniesTreasury_companies_inner(
+                    coingecko_python.models.companies_treasury_companies_inner.CompaniesTreasury_companies_inner(
                         name = '', 
                         symbol = '', 
                         country = '', 

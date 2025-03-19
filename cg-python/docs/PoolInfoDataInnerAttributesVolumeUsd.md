@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.pool_info_data_inner_attributes_volume_usd import PoolInfoDataInnerAttributesVolumeUsd
+from coingecko_python.models.pool_info_data_inner_attributes_volume_usd import PoolInfoDataInnerAttributesVolumeUsd
 
 # TODO update the JSON string below
 json = "{}"

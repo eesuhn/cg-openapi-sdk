@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_tickers_inner_converted_last import CoinsDataBaseTickersInnerConvertedLast
+from coingecko_python.models.coins_data_base_tickers_inner_converted_last import CoinsDataBaseTickersInnerConvertedLast
 
 class TestCoinsDataBaseTickersInnerConvertedLast(unittest.TestCase):
     """CoinsDataBaseTickersInnerConvertedLast unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.onchain_categories_list import OnchainCategoriesList
+from coingecko_python.models.onchain_categories_list import OnchainCategoriesList
 
 class TestOnchainCategoriesList(unittest.TestCase):
     """OnchainCategoriesList unit test stubs"""
@@ -36,13 +36,13 @@ class TestOnchainCategoriesList(unittest.TestCase):
         if include_optional:
             return OnchainCategoriesList(
                 data = [
-                    coingecko_sdk.models.onchain_categories_list_data_inner.OnchainCategoriesList_data_inner(
+                    coingecko_python.models.onchain_categories_list_data_inner.OnchainCategoriesList_data_inner(
                         id = '', 
                         type = '', 
-                        attributes = coingecko_sdk.models.onchain_categories_list_data_inner_attributes.OnchainCategoriesList_data_inner_attributes(
+                        attributes = coingecko_python.models.onchain_categories_list_data_inner_attributes.OnchainCategoriesList_data_inner_attributes(
                             name = '', 
                             description = '', 
-                            volume_change_percentage = coingecko_sdk.models.onchain_categories_list_data_inner_attributes_volume_change_percentage.OnchainCategoriesList_data_inner_attributes_volume_change_percentage(
+                            volume_change_percentage = coingecko_python.models.onchain_categories_list_data_inner_attributes_volume_change_percentage.OnchainCategoriesList_data_inner_attributes_volume_change_percentage(
                                 h1 = '', 
                                 h6 = '', 
                                 h12 = '', 

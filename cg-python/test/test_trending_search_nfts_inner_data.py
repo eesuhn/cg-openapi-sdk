@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.trending_search_nfts_inner_data import TrendingSearchNftsInnerData
+from coingecko_python.models.trending_search_nfts_inner_data import TrendingSearchNftsInnerData
 
 class TestTrendingSearchNftsInnerData(unittest.TestCase):
     """TrendingSearchNftsInnerData unit test stubs"""

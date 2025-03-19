@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.ohlcv_data_attributes import OHLCVDataAttributes
+from coingecko_python.models.ohlcv_data_attributes import OHLCVDataAttributes
 
 # TODO update the JSON string below
 json = "{}"

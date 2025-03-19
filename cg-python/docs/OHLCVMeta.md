@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.ohlcv_meta import OHLCVMeta
+from coingecko_python.models.ohlcv_meta import OHLCVMeta
 
 # TODO update the JSON string below
 json = "{}"

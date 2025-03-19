@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.networks_list_data_inner_attributes import NetworksListDataInnerAttributes
+from coingecko_python.models.networks_list_data_inner_attributes import NetworksListDataInnerAttributes
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_data_volume24h import NFTDataVolume24h
+from coingecko_python.models.nft_data_volume24h import NFTDataVolume24h
 
 class TestNFTDataVolume24h(unittest.TestCase):
     """NFTDataVolume24h unit test stubs"""

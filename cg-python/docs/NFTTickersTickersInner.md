@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.nft_tickers_tickers_inner import NFTTickersTickersInner
+from coingecko_python.models.nft_tickers_tickers_inner import NFTTickersTickersInner
 
 # TODO update the JSON string below
 json = "{}"

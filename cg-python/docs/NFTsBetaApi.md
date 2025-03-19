@@ -1,4 +1,4 @@
-# coingecko_sdk.NFTsBetaApi
+# coingecko_python.NFTsBetaApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -26,14 +26,14 @@ This endpoint allows you to **query all the NFT data (name, floor price, 24hr vo
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.nft_data import NFTData
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.nft_data import NFTData
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -55,9 +55,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.NFTsBetaApi(api_client)
+    api_instance = coingecko_python.NFTsBetaApi(api_client)
     asset_platform_id = 'ethereum' # str | asset platform ID <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list)
     contract_address = '0xBd3531dA5CF5857e7CfAA92426877b022e612cf8' # str | the contract address of token
 
@@ -114,14 +114,14 @@ This endpoint allows you **query historical market data of a NFT collection, inc
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.nft_market_chart import NFTMarketChart
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.nft_market_chart import NFTMarketChart
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -143,9 +143,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.NFTsBetaApi(api_client)
+    api_instance = coingecko_python.NFTsBetaApi(api_client)
     asset_platform_id = 'ethereum' # str | asset platform ID <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list)
     contract_address = '0xBd3531dA5CF5857e7CfAA92426877b022e612cf8' # str | contract address of the NFT collection
     days = '1' # str | data up to number of days ago <br> Valid values: any integer or max
@@ -204,14 +204,14 @@ This endpoint allows you to **query all the NFT data (name, floor price, 24hr vo
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.nft_data import NFTData
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.nft_data import NFTData
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -233,9 +233,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.NFTsBetaApi(api_client)
+    api_instance = coingecko_python.NFTsBetaApi(api_client)
     id = 'pudgy-penguins' # str | NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
 
     try:
@@ -290,14 +290,14 @@ This endpoint allows you **query historical market data of a NFT collection, inc
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.nft_market_chart import NFTMarketChart
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.nft_market_chart import NFTMarketChart
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -319,9 +319,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.NFTsBetaApi(api_client)
+    api_instance = coingecko_python.NFTsBetaApi(api_client)
     id = 'pudgy-penguins' # str | NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
     days = '1' # str | data up to number of days <br> Valid values: any integer or max
 
@@ -378,14 +378,14 @@ This endpoint allows you to **query the latest floor price and 24hr volume of a 
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.nft_tickers import NFTTickers
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.nft_tickers import NFTTickers
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -407,9 +407,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.NFTsBetaApi(api_client)
+    api_instance = coingecko_python.NFTsBetaApi(api_client)
     id = 'pudgy-penguins' # str | NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
 
     try:
@@ -464,14 +464,14 @@ This endpoint allows you to **query all supported NFTs with ID, contract address
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.nft_list import NFTList
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.nft_list import NFTList
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -493,9 +493,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.NFTsBetaApi(api_client)
+    api_instance = coingecko_python.NFTsBetaApi(api_client)
     order = 'order_example' # str | use this to sort the order of responses (optional)
     per_page = 3.4 # float | total results per page <br> Valid values: 1...250 (optional)
     page = 3.4 # float | page through results (optional)
@@ -554,14 +554,14 @@ This endpoint allows you to **query all the supported NFT collections with floor
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.nfts_markets_inner import NFTsMarketsInner
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.nfts_markets_inner import NFTsMarketsInner
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -583,9 +583,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.NFTsBetaApi(api_client)
+    api_instance = coingecko_python.NFTsBetaApi(api_client)
     asset_platform_id = 'ethereum' # str | filter result by asset platform (blockchain network) <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list) filter=`nft` (optional)
     order = 'order_example' # str | sort results by field <br> Default: `market_cap_usd_desc` (optional)
     per_page = 3.4 # float | total results per page <br> Valid values: any integer between 1 and 250 <br> Default: `100` (optional)

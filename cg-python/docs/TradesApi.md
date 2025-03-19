@@ -1,4 +1,4 @@
-# coingecko_sdk.TradesApi
+# coingecko_python.TradesApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -20,14 +20,14 @@ This endpoint allows you to **query the last 300 trades in the past 24 hours bas
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko_sdk
-from coingecko_sdk.models.trades import Trades
-from coingecko_sdk.rest import ApiException
+import coingecko_python
+from coingecko_python.models.trades import Trades
+from coingecko_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko_sdk.Configuration(
+configuration = coingecko_python.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -49,9 +49,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko_sdk.ApiClient(configuration) as api_client:
+with coingecko_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko_sdk.TradesApi(api_client)
+    api_instance = coingecko_python.TradesApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     pool_address = '0x06da0fd433c1a5d7a4faa01111c044910a184553' # str | pool contract address
     trade_volume_in_usd_greater_than = 3.4 # float | filter trades by trade volume in USD greater than this value <br> Default value: 0 (optional)

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.global_data_total_volume import GlobalDataTotalVolume
+from coingecko_python.models.global_data_total_volume import GlobalDataTotalVolume
 
 class TestGlobalDataTotalVolume(unittest.TestCase):
     """GlobalDataTotalVolume unit test stubs"""

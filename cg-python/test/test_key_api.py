@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.api.key_api import KeyApi
+from coingecko_python.api.key_api import KeyApi
 
 
 class TestKeyApi(unittest.TestCase):

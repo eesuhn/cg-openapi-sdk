@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.pool_data_inner_attributes_transactions_m5 import PoolDataInnerAttributesTransactionsM5
+from coingecko_python.models.pool_data_inner_attributes_transactions_m5 import PoolDataInnerAttributesTransactionsM5
 
 class TestPoolDataInnerAttributesTransactionsM5(unittest.TestCase):
     """PoolDataInnerAttributesTransactionsM5 unit test stubs"""

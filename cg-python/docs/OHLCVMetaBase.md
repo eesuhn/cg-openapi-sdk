@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.ohlcv_meta_base import OHLCVMetaBase
+from coingecko_python.models.ohlcv_meta_base import OHLCVMetaBase
 
 # TODO update the JSON string below
 json = "{}"

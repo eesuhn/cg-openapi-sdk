@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.coins_market_chart_range import CoinsMarketChartRange
+from coingecko_python.models.coins_market_chart_range import CoinsMarketChartRange
 
 # TODO update the JSON string below
 json = "{}"

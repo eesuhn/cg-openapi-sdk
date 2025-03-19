@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.trending_search_categories_inner_data_market_cap_change_percentage24h import TrendingSearchCategoriesInnerDataMarketCapChangePercentage24h
+from coingecko_python.models.trending_search_categories_inner_data_market_cap_change_percentage24h import TrendingSearchCategoriesInnerDataMarketCapChangePercentage24h
 
 # TODO update the JSON string below
 json = "{}"

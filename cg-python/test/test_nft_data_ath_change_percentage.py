@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_data_ath_change_percentage import NFTDataAthChangePercentage
+from coingecko_python.models.nft_data_ath_change_percentage import NFTDataAthChangePercentage
 
 class TestNFTDataAthChangePercentage(unittest.TestCase):
     """NFTDataAthChangePercentage unit test stubs"""

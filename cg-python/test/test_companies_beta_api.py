@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.api.companies_beta_api import CompaniesBetaApi
+from coingecko_python.api.companies_beta_api import CompaniesBetaApi
 
 
 class TestCompaniesBetaApi(unittest.TestCase):

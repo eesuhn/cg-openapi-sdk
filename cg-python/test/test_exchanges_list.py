@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.exchanges_list import ExchangesList
+from coingecko_python.models.exchanges_list import ExchangesList
 
 class TestExchangesList(unittest.TestCase):
     """ExchangesList unit test stubs"""

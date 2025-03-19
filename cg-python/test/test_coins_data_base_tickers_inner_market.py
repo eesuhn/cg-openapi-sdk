@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_tickers_inner_market import CoinsDataBaseTickersInnerMarket
+from coingecko_python.models.coins_data_base_tickers_inner_market import CoinsDataBaseTickersInnerMarket
 
 class TestCoinsDataBaseTickersInnerMarket(unittest.TestCase):
     """CoinsDataBaseTickersInnerMarket unit test stubs"""

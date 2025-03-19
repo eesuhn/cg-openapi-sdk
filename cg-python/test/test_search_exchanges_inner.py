@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.search_exchanges_inner import SearchExchangesInner
+from coingecko_python.models.search_exchanges_inner import SearchExchangesInner
 
 class TestSearchExchangesInner(unittest.TestCase):
     """SearchExchangesInner unit test stubs"""

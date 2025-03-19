@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_data_base_developer_data import CoinsDataBaseDeveloperData
+from coingecko_python.models.coins_data_base_developer_data import CoinsDataBaseDeveloperData
 
 class TestCoinsDataBaseDeveloperData(unittest.TestCase):
     """CoinsDataBaseDeveloperData unit test stubs"""
@@ -42,7 +42,7 @@ class TestCoinsDataBaseDeveloperData(unittest.TestCase):
                 closed_issues = 1.337,
                 pull_requests_merged = 1.337,
                 pull_request_contributors = 1.337,
-                code_additions_deletions_4_weeks = coingecko_sdk.models.coins_data_base_developer_data_code_additions_deletions_4_weeks.CoinsDataBase_developer_data_code_additions_deletions_4_weeks(
+                code_additions_deletions_4_weeks = coingecko_python.models.coins_data_base_developer_data_code_additions_deletions_4_weeks.CoinsDataBase_developer_data_code_additions_deletions_4_weeks(
                     additions = 1.337, 
                     deletions = 1.337, ),
                 commit_count_4_weeks = 1.337,

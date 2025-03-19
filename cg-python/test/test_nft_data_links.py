@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_data_links import NFTDataLinks
+from coingecko_python.models.nft_data_links import NFTDataLinks
 
 class TestNFTDataLinks(unittest.TestCase):
     """NFTDataLinks unit test stubs"""

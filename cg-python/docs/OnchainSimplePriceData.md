@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko_sdk.models.onchain_simple_price_data import OnchainSimplePriceData
+from coingecko_python.models.onchain_simple_price_data import OnchainSimplePriceData
 
 # TODO update the JSON string below
 json = "{}"

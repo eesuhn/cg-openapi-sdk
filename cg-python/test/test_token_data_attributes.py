@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.token_data_attributes import TokenDataAttributes
+from coingecko_python.models.token_data_attributes import TokenDataAttributes
 
 class TestTokenDataAttributes(unittest.TestCase):
     """TokenDataAttributes unit test stubs"""
@@ -45,7 +45,7 @@ class TestTokenDataAttributes(unittest.TestCase):
                 price_usd = '',
                 fdv_usd = '',
                 total_reserve_in_usd = '',
-                volume_usd = coingecko_sdk.models.token_data_attributes_volume_usd.Token_data_attributes_volume_usd(
+                volume_usd = coingecko_python.models.token_data_attributes_volume_usd.Token_data_attributes_volume_usd(
                     h24 = '', ),
                 market_cap_usd = ''
             )

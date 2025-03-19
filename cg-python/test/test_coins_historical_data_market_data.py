@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.coins_historical_data_market_data import CoinsHistoricalDataMarketData
+from coingecko_python.models.coins_historical_data_market_data import CoinsHistoricalDataMarketData
 
 class TestCoinsHistoricalDataMarketData(unittest.TestCase):
     """CoinsHistoricalDataMarketData unit test stubs"""
@@ -35,15 +35,15 @@ class TestCoinsHistoricalDataMarketData(unittest.TestCase):
         model = CoinsHistoricalDataMarketData()
         if include_optional:
             return CoinsHistoricalDataMarketData(
-                current_price = coingecko_sdk.models.coins_historical_data_market_data_current_price.CoinsHistoricalData_market_data_current_price(
+                current_price = coingecko_python.models.coins_historical_data_market_data_current_price.CoinsHistoricalData_market_data_current_price(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                market_cap = coingecko_sdk.models.coins_historical_data_market_data_market_cap.CoinsHistoricalData_market_data_market_cap(
+                market_cap = coingecko_python.models.coins_historical_data_market_data_market_cap.CoinsHistoricalData_market_data_market_cap(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                total_volume = coingecko_sdk.models.coins_historical_data_market_data_total_volume.CoinsHistoricalData_market_data_total_volume(
+                total_volume = coingecko_python.models.coins_historical_data_market_data_total_volume.CoinsHistoricalData_market_data_total_volume(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, )

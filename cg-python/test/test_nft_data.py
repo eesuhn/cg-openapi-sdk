@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko_sdk.models.nft_data import NFTData
+from coingecko_python.models.nft_data import NFTData
 
 class TestNFTData(unittest.TestCase):
     """NFTData unit test stubs"""
@@ -40,32 +40,32 @@ class TestNFTData(unittest.TestCase):
                 asset_platform_id = '',
                 name = '',
                 symbol = '',
-                image = coingecko_sdk.models.nft_data_image.NFTData_image(
+                image = coingecko_python.models.nft_data_image.NFTData_image(
                     small = '', 
                     small_2x = '', ),
-                banner_image = coingecko_sdk.models.nft_data_banner_image.NFTData_banner_image(
+                banner_image = coingecko_python.models.nft_data_banner_image.NFTData_banner_image(
                     small = '', ),
                 description = '',
                 native_currency = '',
                 native_currency_symbol = '',
                 market_cap_rank = 1.337,
-                floor_price = coingecko_sdk.models.nft_data_floor_price.NFTData_floor_price(
+                floor_price = coingecko_python.models.nft_data_floor_price.NFTData_floor_price(
                     native_currency = 1.337, 
                     usd = 1.337, ),
-                market_cap = coingecko_sdk.models.nft_data_market_cap.NFTData_market_cap(
+                market_cap = coingecko_python.models.nft_data_market_cap.NFTData_market_cap(
                     native_currency = 1.337, 
                     usd = 1.337, ),
-                volume_24h = coingecko_sdk.models.nft_data_volume_24h.NFTData_volume_24h(
+                volume_24h = coingecko_python.models.nft_data_volume_24h.NFTData_volume_24h(
                     native_currency = 1.337, 
                     usd = 1.337, ),
                 floor_price_in_usd_24h_percentage_change = 1.337,
-                floor_price_24h_percentage_change = coingecko_sdk.models.nft_data_floor_price_24h_percentage_change.NFTData_floor_price_24h_percentage_change(
+                floor_price_24h_percentage_change = coingecko_python.models.nft_data_floor_price_24h_percentage_change.NFTData_floor_price_24h_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
-                market_cap_24h_percentage_change = coingecko_sdk.models.nft_data_market_cap_24h_percentage_change.NFTData_market_cap_24h_percentage_change(
+                market_cap_24h_percentage_change = coingecko_python.models.nft_data_market_cap_24h_percentage_change.NFTData_market_cap_24h_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
-                volume_24h_percentage_change = coingecko_sdk.models.nft_data_volume_24h_percentage_change.NFTData_volume_24h_percentage_change(
+                volume_24h_percentage_change = coingecko_python.models.nft_data_volume_24h_percentage_change.NFTData_volume_24h_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
                 number_of_unique_addresses = 1.337,
@@ -76,38 +76,38 @@ class TestNFTData(unittest.TestCase):
                 one_day_sales_24h_percentage_change = 1.337,
                 one_day_average_sale_price = 1.337,
                 one_day_average_sale_price_24h_percentage_change = 1.337,
-                links = coingecko_sdk.models.nft_data_links.NFTData_links(
+                links = coingecko_python.models.nft_data_links.NFTData_links(
                     homepage = '', 
                     twitter = '', 
                     discord = '', ),
-                floor_price_7d_percentage_change = coingecko_sdk.models.nft_data_floor_price_7d_percentage_change.NFTData_floor_price_7d_percentage_change(
+                floor_price_7d_percentage_change = coingecko_python.models.nft_data_floor_price_7d_percentage_change.NFTData_floor_price_7d_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
-                floor_price_14d_percentage_change = coingecko_sdk.models.nft_data_floor_price_14d_percentage_change.NFTData_floor_price_14d_percentage_change(
+                floor_price_14d_percentage_change = coingecko_python.models.nft_data_floor_price_14d_percentage_change.NFTData_floor_price_14d_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
-                floor_price_30d_percentage_change = coingecko_sdk.models.nft_data_floor_price_30d_percentage_change.NFTData_floor_price_30d_percentage_change(
+                floor_price_30d_percentage_change = coingecko_python.models.nft_data_floor_price_30d_percentage_change.NFTData_floor_price_30d_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
-                floor_price_60d_percentage_change = coingecko_sdk.models.nft_data_floor_price_60d_percentage_change.NFTData_floor_price_60d_percentage_change(
+                floor_price_60d_percentage_change = coingecko_python.models.nft_data_floor_price_60d_percentage_change.NFTData_floor_price_60d_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
-                floor_price_1y_percentage_change = coingecko_sdk.models.nft_data_floor_price_1y_percentage_change.NFTData_floor_price_1y_percentage_change(
+                floor_price_1y_percentage_change = coingecko_python.models.nft_data_floor_price_1y_percentage_change.NFTData_floor_price_1y_percentage_change(
                     usd = 1.337, 
                     native_currency = 1.337, ),
                 explorers = [
-                    coingecko_sdk.models.nft_data_explorers_inner.NFTData_explorers_inner(
+                    coingecko_python.models.nft_data_explorers_inner.NFTData_explorers_inner(
                         name = '', 
                         link = '', )
                     ],
                 user_favorites_count = 1.337,
-                ath = coingecko_sdk.models.nft_data_ath.NFTData_ath(
+                ath = coingecko_python.models.nft_data_ath.NFTData_ath(
                     native_currency = 1.337, 
                     usd = 1.337, ),
-                ath_change_percentage = coingecko_sdk.models.nft_data_ath_change_percentage.NFTData_ath_change_percentage(
+                ath_change_percentage = coingecko_python.models.nft_data_ath_change_percentage.NFTData_ath_change_percentage(
                     native_currency = 1.337, 
                     usd = 1.337, ),
-                ath_date = coingecko_sdk.models.nft_data_ath_date.NFTData_ath_date(
+                ath_date = coingecko_python.models.nft_data_ath_date.NFTData_ath_date(
                     native_currency = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     usd = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
             )
