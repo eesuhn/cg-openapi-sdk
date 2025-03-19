@@ -1,4 +1,4 @@
-# coingecko-sdk.TokensApi
+# coingecko_sdk.TokensApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -25,14 +25,14 @@ This endpoint allows you to **query pool metadata (base and quote  token details
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.pool_tokens_info import PoolTokensInfo
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.pool_tokens_info import PoolTokensInfo
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -54,9 +54,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.TokensApi(api_client)
+    api_instance = coingecko_sdk.TokensApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     pool_address = '0x06da0fd433c1a5d7a4faa01111c044910a184553' # str | pool contract address
 
@@ -113,14 +113,14 @@ This endpoint allows you to **query specific token data based on the provided to
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.token import Token
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.token import Token
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -142,9 +142,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.TokensApi(api_client)
+    api_instance = coingecko_sdk.TokensApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     address = '0xdac17f958d2ee523a2206206994597c13d831ec7' # str | token contract address
     include = 'include_example' # str | attributes to include (optional)
@@ -203,14 +203,14 @@ This endpoint allows you to **query token metadata (name, symbol,  CoinGecko ID,
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.token_info import TokenInfo
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.token_info import TokenInfo
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -232,9 +232,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.TokensApi(api_client)
+    api_instance = coingecko_sdk.TokensApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     address = '0xdac17f958d2ee523a2206206994597c13d831ec7' # str | token contract address
 
@@ -291,14 +291,14 @@ This endpoint allows you to **query multiple tokens data based on the provided t
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.token import Token
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.token import Token
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -320,9 +320,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.TokensApi(api_client)
+    api_instance = coingecko_sdk.TokensApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     addresses = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' # str | token contract address, comma-separated if more than one token contract address
     include = 'include_example' # str | attributes to include (optional)
@@ -381,14 +381,14 @@ This endpoint allows you to **query 100 most recently updated tokens info of a s
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.token_info_recently_updated import TokenInfoRecentlyUpdated
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.token_info_recently_updated import TokenInfoRecentlyUpdated
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -410,9 +410,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.TokensApi(api_client)
+    api_instance = coingecko_sdk.TokensApi(api_client)
     include = 'include_example' # str | Attributes for related resources to include, which will be returned under the top-level 'included' key (optional)
     network = 'eth' # str | filter tokens by provided network <br> *refers to [/networks](/reference/networks-list) (optional)
 
@@ -469,14 +469,14 @@ This endpoint allows you to **query top pools based on the provided token contra
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.pool import Pool
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.pool import Pool
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -498,9 +498,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.TokensApi(api_client)
+    api_instance = coingecko_sdk.TokensApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     token_address = '0xdac17f958d2ee523a2206206994597c13d831ec7' # str | token contract address
     include = 'base_token' # str | attributes to include, comma-separated if more than one to include <br> Available values: `base_token`, `quote_token`, `dex` (optional)

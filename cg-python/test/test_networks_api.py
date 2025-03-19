@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.networks_api import NetworksApi
+from coingecko_sdk.api.networks_api import NetworksApi
 
 
 class TestNetworksApi(unittest.TestCase):

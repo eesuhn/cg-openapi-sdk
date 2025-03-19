@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.search_categories_inner import SearchCategoriesInner
+from coingecko_sdk.models.search_categories_inner import SearchCategoriesInner
 
 class TestSearchCategoriesInner(unittest.TestCase):
     """SearchCategoriesInner unit test stubs"""

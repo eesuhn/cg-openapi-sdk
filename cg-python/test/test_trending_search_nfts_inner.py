@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.trending_search_nfts_inner import TrendingSearchNftsInner
+from coingecko_sdk.models.trending_search_nfts_inner import TrendingSearchNftsInner
 
 class TestTrendingSearchNftsInner(unittest.TestCase):
     """TrendingSearchNftsInner unit test stubs"""
@@ -43,7 +43,7 @@ class TestTrendingSearchNftsInner(unittest.TestCase):
                 native_currency_symbol = '',
                 floor_price_in_native_currency = 1.337,
                 floor_price_24h_percentage_change = 1.337,
-                data = coingecko-sdk.models.trending_search_nfts_inner_data.TrendingSearch_nfts_inner_data(
+                data = coingecko_sdk.models.trending_search_nfts_inner_data.TrendingSearch_nfts_inner_data(
                     floor_price = '', 
                     floor_price_in_usd_24h_percentage_change = '', 
                     h24_volume = '', 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.exchange_rates_api import ExchangeRatesApi
+from coingecko_sdk.api.exchange_rates_api import ExchangeRatesApi
 
 
 class TestExchangeRatesApi(unittest.TestCase):

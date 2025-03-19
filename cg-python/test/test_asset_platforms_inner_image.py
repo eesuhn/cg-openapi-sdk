@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.asset_platforms_inner_image import AssetPlatformsInnerImage
+from coingecko_sdk.models.asset_platforms_inner_image import AssetPlatformsInnerImage
 
 class TestAssetPlatformsInnerImage(unittest.TestCase):
     """AssetPlatformsInnerImage unit test stubs"""

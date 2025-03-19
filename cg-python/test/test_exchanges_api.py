@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.exchanges_api import ExchangesApi
+from coingecko_sdk.api.exchanges_api import ExchangesApi
 
 
 class TestExchangesApi(unittest.TestCase):

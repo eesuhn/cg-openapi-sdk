@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "coingecko-sdk"
+name = "coingecko_sdk"
 version = "1.0.0"
 description = "CoinGecko API"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
@@ -7,7 +7,7 @@ license = "NoLicense"
 readme = "README.md"
 repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
 keywords = ["OpenAPI", "OpenAPI-Generator", "CoinGecko API"]
-include = ["coingecko-sdk/py.typed"]
+include = ["coingecko_sdk/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -35,7 +35,7 @@ extension-pkg-whitelist = "pydantic"
 
 [tool.mypy]
 files = [
-  "coingecko-sdk",
+  "coingecko_sdk",
   #"test",  # auto-generated tests
   "tests", # hand-written tests
 ]
@@ -73,7 +73,7 @@ disallow_any_generics = true
 
 [[tool.mypy.overrides]]
 module = [
-  "coingecko-sdk.configuration",
+  "coingecko_sdk.configuration",
 ]
 warn_unused_ignores = true
 strict_equality = true

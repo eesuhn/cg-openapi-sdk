@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.trades_data_inner_attributes import TradesDataInnerAttributes
+from coingecko_sdk.models.trades_data_inner_attributes import TradesDataInnerAttributes
 
 # TODO update the JSON string below
 json = "{}"

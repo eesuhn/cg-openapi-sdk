@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.token_info_data_attributes import TokenInfoDataAttributes
+from coingecko_sdk.models.token_info_data_attributes import TokenInfoDataAttributes
 
 # TODO update the JSON string below
 json = "{}"

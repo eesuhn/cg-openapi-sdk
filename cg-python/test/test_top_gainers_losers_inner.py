@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.top_gainers_losers_inner import TopGainersLosersInner
+from coingecko_sdk.models.top_gainers_losers_inner import TopGainersLosersInner
 
 class TestTopGainersLosersInner(unittest.TestCase):
     """TopGainersLosersInner unit test stubs"""

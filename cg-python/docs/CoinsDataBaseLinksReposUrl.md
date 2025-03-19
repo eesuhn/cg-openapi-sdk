@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.coins_data_base_links_repos_url import CoinsDataBaseLinksReposUrl
+from coingecko_sdk.models.coins_data_base_links_repos_url import CoinsDataBaseLinksReposUrl
 
 # TODO update the JSON string below
 json = "{}"

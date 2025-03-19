@@ -1,4 +1,4 @@
-# coingecko-sdk.NetworksApi
+# coingecko_sdk.NetworksApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -20,14 +20,14 @@ This endpoint allows you to **query all the supported networks on GeckoTerminal*
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.networks_list import NetworksList
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.networks_list import NetworksList
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -49,9 +49,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.NetworksApi(api_client)
+    api_instance = coingecko_sdk.NetworksApi(api_client)
     page = 56 # int | page through results <br> Default value: 1 (optional)
 
     try:

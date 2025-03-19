@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.token_data_attributes_volume_usd import TokenDataAttributesVolumeUsd
+from coingecko_sdk.models.token_data_attributes_volume_usd import TokenDataAttributesVolumeUsd
 
 class TestTokenDataAttributesVolumeUsd(unittest.TestCase):
     """TokenDataAttributesVolumeUsd unit test stubs"""

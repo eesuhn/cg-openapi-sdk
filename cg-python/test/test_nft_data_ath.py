@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nft_data_ath import NFTDataAth
+from coingecko_sdk.models.nft_data_ath import NFTDataAth
 
 class TestNFTDataAth(unittest.TestCase):
     """NFTDataAth unit test stubs"""

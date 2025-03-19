@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.token_included_inner_relationships import TokenIncludedInnerRelationships
+from coingecko_sdk.models.token_included_inner_relationships import TokenIncludedInnerRelationships
 
 # TODO update the JSON string below
 json = "{}"

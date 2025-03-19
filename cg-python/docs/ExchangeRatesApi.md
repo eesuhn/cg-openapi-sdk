@@ -1,4 +1,4 @@
-# coingecko-sdk.ExchangeRatesApi
+# coingecko_sdk.ExchangeRatesApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -20,14 +20,14 @@ This endpoint allows you to **query BTC exchange rates with other currencies**
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.exchange_rates import ExchangeRates
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.exchange_rates import ExchangeRates
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -49,9 +49,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.ExchangeRatesApi(api_client)
+    api_instance = coingecko_sdk.ExchangeRatesApi(api_client)
 
     try:
         # BTC-to-Currency Exchange Rates

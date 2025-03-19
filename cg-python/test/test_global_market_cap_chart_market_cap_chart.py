@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.global_market_cap_chart_market_cap_chart import GlobalMarketCapChartMarketCapChart
+from coingecko_sdk.models.global_market_cap_chart_market_cap_chart import GlobalMarketCapChartMarketCapChart
 
 class TestGlobalMarketCapChartMarketCapChart(unittest.TestCase):
     """GlobalMarketCapChartMarketCapChart unit test stubs"""

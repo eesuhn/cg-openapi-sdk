@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.derivatives_api import DerivativesApi
+from coingecko_sdk.api.derivatives_api import DerivativesApi
 
 
 class TestDerivativesApi(unittest.TestCase):

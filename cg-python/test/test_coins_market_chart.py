@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_market_chart import CoinsMarketChart
+from coingecko_sdk.models.coins_market_chart import CoinsMarketChart
 
 class TestCoinsMarketChart(unittest.TestCase):
     """CoinsMarketChart unit test stubs"""

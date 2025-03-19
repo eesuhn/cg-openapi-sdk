@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.nft_data_banner_image import NFTDataBannerImage
+from coingecko_sdk.models.nft_data_banner_image import NFTDataBannerImage
 
 # TODO update the JSON string below
 json = "{}"

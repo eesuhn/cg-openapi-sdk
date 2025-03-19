@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.categories_pools import CategoriesPools
+from coingecko_sdk.models.categories_pools import CategoriesPools
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.ohlcv_api import OHLCVApi
+from coingecko_sdk.api.ohlcv_api import OHLCVApi
 
 
 class TestOHLCVApi(unittest.TestCase):

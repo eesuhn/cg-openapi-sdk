@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_market_data_current_price import CoinsDataBaseMarketDataCurrentPrice
+from coingecko_sdk.models.coins_data_base_market_data_current_price import CoinsDataBaseMarketDataCurrentPrice
 
 class TestCoinsDataBaseMarketDataCurrentPrice(unittest.TestCase):
     """CoinsDataBaseMarketDataCurrentPrice unit test stubs"""

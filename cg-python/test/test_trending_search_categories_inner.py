@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.trending_search_categories_inner import TrendingSearchCategoriesInner
+from coingecko_sdk.models.trending_search_categories_inner import TrendingSearchCategoriesInner
 
 class TestTrendingSearchCategoriesInner(unittest.TestCase):
     """TrendingSearchCategoriesInner unit test stubs"""
@@ -40,12 +40,12 @@ class TestTrendingSearchCategoriesInner(unittest.TestCase):
                 market_cap_1h_change = 1.337,
                 slug = '',
                 coins_count = 1.337,
-                data = coingecko-sdk.models.trending_search_categories_inner_data.TrendingSearch_categories_inner_data(
+                data = coingecko_sdk.models.trending_search_categories_inner_data.TrendingSearch_categories_inner_data(
                     market_cap = 1.337, 
                     market_cap_btc = 1.337, 
                     total_volume = 1.337, 
                     total_volume_btc = 1.337, 
-                    market_cap_change_percentage_24h = coingecko-sdk.models.trending_search_categories_inner_data_market_cap_change_percentage_24h.TrendingSearch_categories_inner_data_market_cap_change_percentage_24h(
+                    market_cap_change_percentage_24h = coingecko_sdk.models.trending_search_categories_inner_data_market_cap_change_percentage_24h.TrendingSearch_categories_inner_data_market_cap_change_percentage_24h(
                         btc = 1.337, 
                         usd = 1.337, ), 
                     sparkline = '', )

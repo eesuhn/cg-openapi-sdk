@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.global_market_cap_chart import GlobalMarketCapChart
+from coingecko_sdk.models.global_market_cap_chart import GlobalMarketCapChart
 
 # TODO update the JSON string below
 json = "{}"

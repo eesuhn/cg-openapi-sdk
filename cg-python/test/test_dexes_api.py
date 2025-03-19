@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.dexes_api import DexesApi
+from coingecko_sdk.api.dexes_api import DexesApi
 
 
 class TestDexesApi(unittest.TestCase):

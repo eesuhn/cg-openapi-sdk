@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nft_data_market_cap24h_percentage_change import NFTDataMarketCap24hPercentageChange
+from coingecko_sdk.models.nft_data_market_cap24h_percentage_change import NFTDataMarketCap24hPercentageChange
 
 class TestNFTDataMarketCap24hPercentageChange(unittest.TestCase):
     """NFTDataMarketCap24hPercentageChange unit test stubs"""

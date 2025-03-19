@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_links import CoinsDataBaseLinks
+from coingecko_sdk.models.coins_data_base_links import CoinsDataBaseLinks
 
 class TestCoinsDataBaseLinks(unittest.TestCase):
     """CoinsDataBaseLinks unit test stubs"""
@@ -59,7 +59,7 @@ class TestCoinsDataBaseLinks(unittest.TestCase):
                 bitcointalk_thread_identifier = '',
                 telegram_channel_identifier = '',
                 subreddit_url = '',
-                repos_url = coingecko-sdk.models.coins_data_base_links_repos_url.CoinsDataBase_links_repos_url(
+                repos_url = coingecko_sdk.models.coins_data_base_links_repos_url.CoinsDataBase_links_repos_url(
                     github = [
                         ''
                         ], 

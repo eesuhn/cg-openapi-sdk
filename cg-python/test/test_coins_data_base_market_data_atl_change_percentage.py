@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_market_data_atl_change_percentage import CoinsDataBaseMarketDataAtlChangePercentage
+from coingecko_sdk.models.coins_data_base_market_data_atl_change_percentage import CoinsDataBaseMarketDataAtlChangePercentage
 
 class TestCoinsDataBaseMarketDataAtlChangePercentage(unittest.TestCase):
     """CoinsDataBaseMarketDataAtlChangePercentage unit test stubs"""

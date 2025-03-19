@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nft_list import NFTList
+from coingecko_sdk.models.nft_list import NFTList
 
 class TestNFTList(unittest.TestCase):
     """NFTList unit test stubs"""

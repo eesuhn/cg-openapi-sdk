@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.categories_list import CategoriesList
+from coingecko_sdk.models.categories_list import CategoriesList
 
 class TestCategoriesList(unittest.TestCase):
     """CategoriesList unit test stubs"""

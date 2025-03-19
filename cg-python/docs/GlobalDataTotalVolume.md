@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.global_data_total_volume import GlobalDataTotalVolume
+from coingecko_sdk.models.global_data_total_volume import GlobalDataTotalVolume
 
 # TODO update the JSON string below
 json = "{}"

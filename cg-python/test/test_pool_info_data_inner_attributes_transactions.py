@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.pool_info_data_inner_attributes_transactions import PoolInfoDataInnerAttributesTransactions
+from coingecko_sdk.models.pool_info_data_inner_attributes_transactions import PoolInfoDataInnerAttributesTransactions
 
 class TestPoolInfoDataInnerAttributesTransactions(unittest.TestCase):
     """PoolInfoDataInnerAttributesTransactions unit test stubs"""
@@ -35,32 +35,32 @@ class TestPoolInfoDataInnerAttributesTransactions(unittest.TestCase):
         model = PoolInfoDataInnerAttributesTransactions()
         if include_optional:
             return PoolInfoDataInnerAttributesTransactions(
-                m5 = coingecko-sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                m5 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                     buys = 56, 
                     sells = 56, 
                     buyers = 56, 
                     sellers = 56, ),
-                m15 = coingecko-sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                m15 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                     buys = 56, 
                     sells = 56, 
                     buyers = 56, 
                     sellers = 56, ),
-                m30 = coingecko-sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                m30 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                     buys = 56, 
                     sells = 56, 
                     buyers = 56, 
                     sellers = 56, ),
-                h1 = coingecko-sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                h1 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                     buys = 56, 
                     sells = 56, 
                     buyers = 56, 
                     sellers = 56, ),
-                h6 = coingecko-sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                h6 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                     buys = 56, 
                     sells = 56, 
                     buyers = 56, 
                     sellers = 56, ),
-                h24 = coingecko-sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
+                h24 = coingecko_sdk.models.pool_data_inner_attributes_transactions_m5.Pool_data_inner_attributes_transactions_m5(
                     buys = 56, 
                     sells = 56, 
                     buyers = 56, 

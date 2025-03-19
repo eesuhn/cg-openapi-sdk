@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_market_data_high24h import CoinsDataBaseMarketDataHigh24h
+from coingecko_sdk.models.coins_data_base_market_data_high24h import CoinsDataBaseMarketDataHigh24h
 
 class TestCoinsDataBaseMarketDataHigh24h(unittest.TestCase):
     """CoinsDataBaseMarketDataHigh24h unit test stubs"""

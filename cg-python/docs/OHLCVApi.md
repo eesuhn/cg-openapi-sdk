@@ -1,4 +1,4 @@
-# coingecko-sdk.OHLCVApi
+# coingecko_sdk.OHLCVApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -20,14 +20,14 @@ This endpoint allows you to **get the OHLCV chart (Open, High, Low, Close, Volum
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.ohlcv import OHLCV
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.ohlcv import OHLCV
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -49,9 +49,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.OHLCVApi(api_client)
+    api_instance = coingecko_sdk.OHLCVApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     pool_address = '0x06da0fd433c1a5d7a4faa01111c044910a184553' # str | pool contract address
     timeframe = 'timeframe_example' # str | timeframe of the OHLCV chart

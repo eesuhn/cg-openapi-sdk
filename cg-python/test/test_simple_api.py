@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.simple_api import SimpleApi
+from coingecko_sdk.api.simple_api import SimpleApi
 
 
 class TestSimpleApi(unittest.TestCase):

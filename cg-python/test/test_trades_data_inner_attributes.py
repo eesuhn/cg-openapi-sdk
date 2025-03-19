@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.trades_data_inner_attributes import TradesDataInnerAttributes
+from coingecko_sdk.models.trades_data_inner_attributes import TradesDataInnerAttributes
 
 class TestTradesDataInnerAttributes(unittest.TestCase):
     """TradesDataInnerAttributes unit test stubs"""

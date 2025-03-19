@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.dexes_list_data_inner_attributes import DexesListDataInnerAttributes
+from coingecko_sdk.models.dexes_list_data_inner_attributes import DexesListDataInnerAttributes
 
 # TODO update the JSON string below
 json = "{}"

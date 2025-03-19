@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.trending_api import TrendingApi
+from coingecko_sdk.api.trending_api import TrendingApi
 
 
 class TestTrendingApi(unittest.TestCase):

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.exchange_tickers import ExchangeTickers
+from coingecko_sdk.models.exchange_tickers import ExchangeTickers
 
 class TestExchangeTickers(unittest.TestCase):
     """ExchangeTickers unit test stubs"""
@@ -37,10 +37,10 @@ class TestExchangeTickers(unittest.TestCase):
             return ExchangeTickers(
                 name = '',
                 tickers = [
-                    coingecko-sdk.models.coins_tickers_tickers_inner.CoinsTickers_tickers_inner(
+                    coingecko_sdk.models.coins_tickers_tickers_inner.CoinsTickers_tickers_inner(
                         base = '', 
                         target = '', 
-                        market = coingecko-sdk.models.coins_tickers_tickers_inner_market.CoinsTickers_tickers_inner_market(
+                        market = coingecko_sdk.models.coins_tickers_tickers_inner_market.CoinsTickers_tickers_inner_market(
                             name = '', 
                             identifier = '', 
                             has_trading_incentive = True, 
@@ -49,11 +49,11 @@ class TestExchangeTickers(unittest.TestCase):
                         volume = 1.337, 
                         cost_to_move_up_usd = 1.337, 
                         cost_to_move_down_usd = 1.337, 
-                        converted_last = coingecko-sdk.models.coins_data_base_tickers_inner_converted_last.CoinsDataBase_tickers_inner_converted_last(
+                        converted_last = coingecko_sdk.models.coins_data_base_tickers_inner_converted_last.CoinsDataBase_tickers_inner_converted_last(
                             btc = 1.337, 
                             eth = 1.337, 
                             usd = 1.337, ), 
-                        converted_volume = coingecko-sdk.models.coins_data_base_tickers_inner_converted_volume.CoinsDataBase_tickers_inner_converted_volume(
+                        converted_volume = coingecko_sdk.models.coins_data_base_tickers_inner_converted_volume.CoinsDataBase_tickers_inner_converted_volume(
                             btc = 1.337, 
                             eth = 1.337, 
                             usd = 1.337, ), 

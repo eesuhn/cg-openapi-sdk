@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.model_global import ModelGlobal
+from coingecko_sdk.models.model_global import ModelGlobal
 
 # TODO update the JSON string below
 json = "{}"

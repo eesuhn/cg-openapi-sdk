@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_image import CoinsDataBaseImage
+from coingecko_sdk.models.coins_data_base_image import CoinsDataBaseImage
 
 class TestCoinsDataBaseImage(unittest.TestCase):
     """CoinsDataBaseImage unit test stubs"""

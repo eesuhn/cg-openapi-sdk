@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_historical_data_developer_data_code_additions_deletions4_weeks import CoinsHistoricalDataDeveloperDataCodeAdditionsDeletions4Weeks
+from coingecko_sdk.models.coins_historical_data_developer_data_code_additions_deletions4_weeks import CoinsHistoricalDataDeveloperDataCodeAdditionsDeletions4Weeks
 
 class TestCoinsHistoricalDataDeveloperDataCodeAdditionsDeletions4Weeks(unittest.TestCase):
     """CoinsHistoricalDataDeveloperDataCodeAdditionsDeletions4Weeks unit test stubs"""

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.nft_data_links import NFTDataLinks
+from coingecko_sdk.models.nft_data_links import NFTDataLinks
 
 # TODO update the JSON string below
 json = "{}"

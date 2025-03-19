@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nft_data_banner_image import NFTDataBannerImage
+from coingecko_sdk.models.nft_data_banner_image import NFTDataBannerImage
 
 class TestNFTDataBannerImage(unittest.TestCase):
     """NFTDataBannerImage unit test stubs"""

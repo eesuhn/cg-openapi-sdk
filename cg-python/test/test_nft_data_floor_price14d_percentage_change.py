@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nft_data_floor_price14d_percentage_change import NFTDataFloorPrice14dPercentageChange
+from coingecko_sdk.models.nft_data_floor_price14d_percentage_change import NFTDataFloorPrice14dPercentageChange
 
 class TestNFTDataFloorPrice14dPercentageChange(unittest.TestCase):
     """NFTDataFloorPrice14dPercentageChange unit test stubs"""

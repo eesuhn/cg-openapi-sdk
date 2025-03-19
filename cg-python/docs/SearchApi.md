@@ -1,4 +1,4 @@
-# coingecko-sdk.SearchApi
+# coingecko_sdk.SearchApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -20,14 +20,14 @@ This endpoint allows you to **search for coins, categories and markets listed on
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.search import Search
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.search import Search
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -49,9 +49,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.SearchApi(api_client)
+    api_instance = coingecko_sdk.SearchApi(api_client)
     query = 'query_example' # str | search query
 
     try:

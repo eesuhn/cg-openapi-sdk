@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.token_lists import TokenLists
+from coingecko_sdk.models.token_lists import TokenLists
 
 class TestTokenLists(unittest.TestCase):
     """TokenLists unit test stubs"""
@@ -42,7 +42,7 @@ class TestTokenLists(unittest.TestCase):
                     ],
                 timestamp = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 tokens = [
-                    coingecko-sdk.models.token_lists_tokens_inner.TokenLists_tokens_inner(
+                    coingecko_sdk.models.token_lists_tokens_inner.TokenLists_tokens_inner(
                         chain_id = 1.337, 
                         address = '', 
                         name = '', 

@@ -1,4 +1,4 @@
-# coingecko-sdk.AssetPlatformsApi
+# coingecko_sdk.AssetPlatformsApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -21,14 +21,14 @@ This endpoint allows you to **query all the asset platforms on CoinGecko**
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.asset_platforms_inner import AssetPlatformsInner
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.asset_platforms_inner import AssetPlatformsInner
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -50,9 +50,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.AssetPlatformsApi(api_client)
+    api_instance = coingecko_sdk.AssetPlatformsApi(api_client)
     filter = 'filter_example' # str | apply relevant filters to results (optional)
 
     try:
@@ -107,14 +107,14 @@ This endpoint allows you to **get full list of tokens of a blockchain network (a
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.token_lists import TokenLists
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.token_lists import TokenLists
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -136,9 +136,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.AssetPlatformsApi(api_client)
+    api_instance = coingecko_sdk.AssetPlatformsApi(api_client)
     asset_platform_id = 'ethereum' # str | asset platform ID <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list)
 
     try:

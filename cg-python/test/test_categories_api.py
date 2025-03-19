@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.categories_api import CategoriesApi
+from coingecko_sdk.api.categories_api import CategoriesApi
 
 
 class TestCategoriesApi(unittest.TestCase):

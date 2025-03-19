@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.tokens_api import TokensApi
+from coingecko_sdk.api.tokens_api import TokensApi
 
 
 class TestTokensApi(unittest.TestCase):

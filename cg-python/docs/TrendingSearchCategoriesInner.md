@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.trending_search_categories_inner import TrendingSearchCategoriesInner
+from coingecko_sdk.models.trending_search_categories_inner import TrendingSearchCategoriesInner
 
 # TODO update the JSON string below
 json = "{}"

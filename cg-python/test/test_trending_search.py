@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.trending_search import TrendingSearch
+from coingecko_sdk.models.trending_search import TrendingSearch
 
 class TestTrendingSearch(unittest.TestCase):
     """TrendingSearch unit test stubs"""
@@ -36,7 +36,7 @@ class TestTrendingSearch(unittest.TestCase):
         if include_optional:
             return TrendingSearch(
                 coins = [
-                    coingecko-sdk.models.trending_search_coins_inner.TrendingSearch_coins_inner(
+                    coingecko_sdk.models.trending_search_coins_inner.TrendingSearch_coins_inner(
                         id = '', 
                         coin_id = 1.337, 
                         name = '', 
@@ -48,10 +48,10 @@ class TestTrendingSearch(unittest.TestCase):
                         slug = '', 
                         price_btc = 1.337, 
                         score = 1.337, 
-                        data = coingecko-sdk.models.trending_search_coins_inner_data.TrendingSearch_coins_inner_data(
+                        data = coingecko_sdk.models.trending_search_coins_inner_data.TrendingSearch_coins_inner_data(
                             price = 1.337, 
                             price_btc = '', 
-                            price_change_percentage_24h = coingecko-sdk.models.trending_search_coins_inner_data_price_change_percentage_24h.TrendingSearch_coins_inner_data_price_change_percentage_24h(
+                            price_change_percentage_24h = coingecko_sdk.models.trending_search_coins_inner_data_price_change_percentage_24h.TrendingSearch_coins_inner_data_price_change_percentage_24h(
                                 btc = 1.337, 
                                 usd = 1.337, ), 
                             market_cap = '', 
@@ -62,7 +62,7 @@ class TestTrendingSearch(unittest.TestCase):
                             content = '', ), )
                     ],
                 nfts = [
-                    coingecko-sdk.models.trending_search_nfts_inner.TrendingSearch_nfts_inner(
+                    coingecko_sdk.models.trending_search_nfts_inner.TrendingSearch_nfts_inner(
                         id = '', 
                         name = '', 
                         symbol = '', 
@@ -71,7 +71,7 @@ class TestTrendingSearch(unittest.TestCase):
                         native_currency_symbol = '', 
                         floor_price_in_native_currency = 1.337, 
                         floor_price_24h_percentage_change = 1.337, 
-                        data = coingecko-sdk.models.trending_search_nfts_inner_data.TrendingSearch_nfts_inner_data(
+                        data = coingecko_sdk.models.trending_search_nfts_inner_data.TrendingSearch_nfts_inner_data(
                             floor_price = '', 
                             floor_price_in_usd_24h_percentage_change = '', 
                             h24_volume = '', 
@@ -80,18 +80,18 @@ class TestTrendingSearch(unittest.TestCase):
                             content = '', ), )
                     ],
                 categories = [
-                    coingecko-sdk.models.trending_search_categories_inner.TrendingSearch_categories_inner(
+                    coingecko_sdk.models.trending_search_categories_inner.TrendingSearch_categories_inner(
                         id = 1.337, 
                         name = '', 
                         market_cap_1h_change = 1.337, 
                         slug = '', 
                         coins_count = 1.337, 
-                        data = coingecko-sdk.models.trending_search_categories_inner_data.TrendingSearch_categories_inner_data(
+                        data = coingecko_sdk.models.trending_search_categories_inner_data.TrendingSearch_categories_inner_data(
                             market_cap = 1.337, 
                             market_cap_btc = 1.337, 
                             total_volume = 1.337, 
                             total_volume_btc = 1.337, 
-                            market_cap_change_percentage_24h = coingecko-sdk.models.trending_search_categories_inner_data_market_cap_change_percentage_24h.TrendingSearch_categories_inner_data_market_cap_change_percentage_24h(
+                            market_cap_change_percentage_24h = coingecko_sdk.models.trending_search_categories_inner_data_market_cap_change_percentage_24h.TrendingSearch_categories_inner_data_market_cap_change_percentage_24h(
                                 btc = 1.337, 
                                 usd = 1.337, ), 
                             sparkline = '', ), )

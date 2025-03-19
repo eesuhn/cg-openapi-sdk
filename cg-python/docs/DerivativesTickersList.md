@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.derivatives_tickers_list import DerivativesTickersList
+from coingecko_sdk.models.derivatives_tickers_list import DerivativesTickersList
 
 # TODO update the JSON string below
 json = "{}"

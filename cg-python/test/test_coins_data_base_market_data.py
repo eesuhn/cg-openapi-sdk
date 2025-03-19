@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_market_data import CoinsDataBaseMarketData
+from coingecko_sdk.models.coins_data_base_market_data import CoinsDataBaseMarketData
 
 class TestCoinsDataBaseMarketData(unittest.TestCase):
     """CoinsDataBaseMarketData unit test stubs"""
@@ -35,7 +35,7 @@ class TestCoinsDataBaseMarketData(unittest.TestCase):
         model = CoinsDataBaseMarketData()
         if include_optional:
             return CoinsDataBaseMarketData(
-                current_price = coingecko-sdk.models.coins_data_base_market_data_current_price.CoinsDataBase_market_data_current_price(
+                current_price = coingecko_sdk.models.coins_data_base_market_data_current_price.CoinsDataBase_market_data_current_price(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
@@ -43,49 +43,49 @@ class TestCoinsDataBaseMarketData(unittest.TestCase):
                 mcap_to_tvl_ratio = 1.337,
                 fdv_to_tvl_ratio = 1.337,
                 roi = 1.337,
-                ath = coingecko-sdk.models.coins_data_base_market_data_ath.CoinsDataBase_market_data_ath(
+                ath = coingecko_sdk.models.coins_data_base_market_data_ath.CoinsDataBase_market_data_ath(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                ath_change_percentage = coingecko-sdk.models.coins_data_base_market_data_ath_change_percentage.CoinsDataBase_market_data_ath_change_percentage(
+                ath_change_percentage = coingecko_sdk.models.coins_data_base_market_data_ath_change_percentage.CoinsDataBase_market_data_ath_change_percentage(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                ath_date = coingecko-sdk.models.coins_data_base_market_data_ath_date.CoinsDataBase_market_data_ath_date(
+                ath_date = coingecko_sdk.models.coins_data_base_market_data_ath_date.CoinsDataBase_market_data_ath_date(
                     btc = '', 
                     eur = '', 
                     usd = '', ),
-                atl = coingecko-sdk.models.coins_data_base_market_data_atl.CoinsDataBase_market_data_atl(
+                atl = coingecko_sdk.models.coins_data_base_market_data_atl.CoinsDataBase_market_data_atl(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                atl_change_percentage = coingecko-sdk.models.coins_data_base_market_data_atl_change_percentage.CoinsDataBase_market_data_atl_change_percentage(
+                atl_change_percentage = coingecko_sdk.models.coins_data_base_market_data_atl_change_percentage.CoinsDataBase_market_data_atl_change_percentage(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                atl_date = coingecko-sdk.models.coins_data_base_market_data_atl_date.CoinsDataBase_market_data_atl_date(
+                atl_date = coingecko_sdk.models.coins_data_base_market_data_atl_date.CoinsDataBase_market_data_atl_date(
                     btc = '', 
                     eur = '', 
                     usd = '', ),
-                market_cap = coingecko-sdk.models.coins_data_base_market_data_market_cap.CoinsDataBase_market_data_market_cap(
+                market_cap = coingecko_sdk.models.coins_data_base_market_data_market_cap.CoinsDataBase_market_data_market_cap(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
                 market_cap_rank = 1.337,
-                fully_diluted_valuation = coingecko-sdk.models.coins_data_base_market_data_fully_diluted_valuation.CoinsDataBase_market_data_fully_diluted_valuation(
+                fully_diluted_valuation = coingecko_sdk.models.coins_data_base_market_data_fully_diluted_valuation.CoinsDataBase_market_data_fully_diluted_valuation(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
                 market_cap_fdv_ratio = 1.337,
-                total_volume = coingecko-sdk.models.coins_data_base_market_data_total_volume.CoinsDataBase_market_data_total_volume(
+                total_volume = coingecko_sdk.models.coins_data_base_market_data_total_volume.CoinsDataBase_market_data_total_volume(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                high_24h = coingecko-sdk.models.coins_data_base_market_data_high_24h.CoinsDataBase_market_data_high_24h(
+                high_24h = coingecko_sdk.models.coins_data_base_market_data_high_24h.CoinsDataBase_market_data_high_24h(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                low_24h = coingecko-sdk.models.coins_data_base_market_data_low_24h.CoinsDataBase_market_data_low_24h(
+                low_24h = coingecko_sdk.models.coins_data_base_market_data_low_24h.CoinsDataBase_market_data_low_24h(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
@@ -99,43 +99,43 @@ class TestCoinsDataBaseMarketData(unittest.TestCase):
                 price_change_percentage_1y = 1.337,
                 market_cap_change_24h = 1.337,
                 market_cap_change_percentage_24h = 1.337,
-                price_change_percentage_1h_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_1h_in_currency.CoinsDataBase_market_data_price_change_percentage_1h_in_currency(
+                price_change_percentage_1h_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_1h_in_currency.CoinsDataBase_market_data_price_change_percentage_1h_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                price_change_percentage_24h_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_24h_in_currency.CoinsDataBase_market_data_price_change_percentage_24h_in_currency(
+                price_change_percentage_24h_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_24h_in_currency.CoinsDataBase_market_data_price_change_percentage_24h_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                price_change_percentage_7d_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_7d_in_currency.CoinsDataBase_market_data_price_change_percentage_7d_in_currency(
+                price_change_percentage_7d_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_7d_in_currency.CoinsDataBase_market_data_price_change_percentage_7d_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                price_change_percentage_14d_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_14d_in_currency.CoinsDataBase_market_data_price_change_percentage_14d_in_currency(
+                price_change_percentage_14d_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_14d_in_currency.CoinsDataBase_market_data_price_change_percentage_14d_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                price_change_percentage_30d_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_30d_in_currency.CoinsDataBase_market_data_price_change_percentage_30d_in_currency(
+                price_change_percentage_30d_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_30d_in_currency.CoinsDataBase_market_data_price_change_percentage_30d_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                price_change_percentage_60d_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_60d_in_currency.CoinsDataBase_market_data_price_change_percentage_60d_in_currency(
+                price_change_percentage_60d_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_60d_in_currency.CoinsDataBase_market_data_price_change_percentage_60d_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                price_change_percentage_200d_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_200d_in_currency.CoinsDataBase_market_data_price_change_percentage_200d_in_currency(
+                price_change_percentage_200d_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_200d_in_currency.CoinsDataBase_market_data_price_change_percentage_200d_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                price_change_percentage_1y_in_currency = coingecko-sdk.models.coins_data_base_market_data_price_change_percentage_1y_in_currency.CoinsDataBase_market_data_price_change_percentage_1y_in_currency(
+                price_change_percentage_1y_in_currency = coingecko_sdk.models.coins_data_base_market_data_price_change_percentage_1y_in_currency.CoinsDataBase_market_data_price_change_percentage_1y_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                market_cap_change_24h_in_currency = coingecko-sdk.models.coins_data_base_market_data_market_cap_change_24h_in_currency.CoinsDataBase_market_data_market_cap_change_24h_in_currency(
+                market_cap_change_24h_in_currency = coingecko_sdk.models.coins_data_base_market_data_market_cap_change_24h_in_currency.CoinsDataBase_market_data_market_cap_change_24h_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),
-                market_cap_change_percentage_24h_in_currency = coingecko-sdk.models.coins_data_base_market_data_market_cap_change_percentage_24h_in_currency.CoinsDataBase_market_data_market_cap_change_percentage_24h_in_currency(
+                market_cap_change_percentage_24h_in_currency = coingecko_sdk.models.coins_data_base_market_data_market_cap_change_percentage_24h_in_currency.CoinsDataBase_market_data_market_cap_change_percentage_24h_in_currency(
                     btc = 1.337, 
                     eur = 1.337, 
                     usd = 1.337, ),

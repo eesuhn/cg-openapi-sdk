@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.global_market_cap_chart import GlobalMarketCapChart
+from coingecko_sdk.models.global_market_cap_chart import GlobalMarketCapChart
 
 class TestGlobalMarketCapChart(unittest.TestCase):
     """GlobalMarketCapChart unit test stubs"""
@@ -35,7 +35,7 @@ class TestGlobalMarketCapChart(unittest.TestCase):
         model = GlobalMarketCapChart()
         if include_optional:
             return GlobalMarketCapChart(
-                market_cap_chart = coingecko-sdk.models.global_market_cap_chart_market_cap_chart.GlobalMarketCapChart_market_cap_chart(
+                market_cap_chart = coingecko_sdk.models.global_market_cap_chart_market_cap_chart.GlobalMarketCapChart_market_cap_chart(
                     market_cap = [
                         [
                             1.337

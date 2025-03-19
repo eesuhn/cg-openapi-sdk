@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.nfts_beta_api import NFTsBetaApi
+from coingecko_sdk.api.nfts_beta_api import NFTsBetaApi
 
 
 class TestNFTsBetaApi(unittest.TestCase):

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.search import Search
+from coingecko_sdk.models.search import Search
 
 class TestSearch(unittest.TestCase):
     """Search unit test stubs"""
@@ -36,7 +36,7 @@ class TestSearch(unittest.TestCase):
         if include_optional:
             return Search(
                 coins = [
-                    coingecko-sdk.models.search_coins_inner.Search_coins_inner(
+                    coingecko_sdk.models.search_coins_inner.Search_coins_inner(
                         id = '', 
                         name = '', 
                         api_symbol = '', 
@@ -46,7 +46,7 @@ class TestSearch(unittest.TestCase):
                         large = '', )
                     ],
                 exchanges = [
-                    coingecko-sdk.models.search_exchanges_inner.Search_exchanges_inner(
+                    coingecko_sdk.models.search_exchanges_inner.Search_exchanges_inner(
                         id = '', 
                         name = '', 
                         market_type = '', 
@@ -57,12 +57,12 @@ class TestSearch(unittest.TestCase):
                     ''
                     ],
                 categories = [
-                    coingecko-sdk.models.search_categories_inner.Search_categories_inner(
+                    coingecko_sdk.models.search_categories_inner.Search_categories_inner(
                         id = '', 
                         name = '', )
                     ],
                 nfts = [
-                    coingecko-sdk.models.search_nfts_inner.Search_nfts_inner(
+                    coingecko_sdk.models.search_nfts_inner.Search_nfts_inner(
                         id = '', 
                         name = '', 
                         symbol = '', 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.contract_api import ContractApi
+from coingecko_sdk.api.contract_api import ContractApi
 
 
 class TestContractApi(unittest.TestCase):

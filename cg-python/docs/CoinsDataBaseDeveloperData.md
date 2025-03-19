@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.coins_data_base_developer_data import CoinsDataBaseDeveloperData
+from coingecko_sdk.models.coins_data_base_developer_data import CoinsDataBaseDeveloperData
 
 # TODO update the JSON string below
 json = "{}"

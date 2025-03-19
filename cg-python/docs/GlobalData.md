@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.global_data import GlobalData
+from coingecko_sdk.models.global_data import GlobalData
 
 # TODO update the JSON string below
 json = "{}"

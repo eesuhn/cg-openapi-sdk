@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.categories_pools_data_inner import CategoriesPoolsDataInner
+from coingecko_sdk.models.categories_pools_data_inner import CategoriesPoolsDataInner
 
 class TestCategoriesPoolsDataInner(unittest.TestCase):
     """CategoriesPoolsDataInner unit test stubs"""
@@ -37,7 +37,7 @@ class TestCategoriesPoolsDataInner(unittest.TestCase):
             return CategoriesPoolsDataInner(
                 id = '',
                 type = '',
-                attributes = coingecko-sdk.models.categories_pools_data_inner_attributes.CategoriesPools_data_inner_attributes(
+                attributes = coingecko_sdk.models.categories_pools_data_inner_attributes.CategoriesPools_data_inner_attributes(
                     base_token_price_usd = '', 
                     base_token_price_native_currency = '', 
                     quote_token_price_usd = '', 
@@ -49,7 +49,7 @@ class TestCategoriesPoolsDataInner(unittest.TestCase):
                     pool_created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     fdv_usd = '', 
                     market_cap_usd = '', 
-                    price_change_percentage = coingecko-sdk.models.pool_data_inner_attributes_price_change_percentage.Pool_data_inner_attributes_price_change_percentage(
+                    price_change_percentage = coingecko_sdk.models.pool_data_inner_attributes_price_change_percentage.Pool_data_inner_attributes_price_change_percentage(
                         m5 = '', 
                         h1 = '', 
                         h6 = '', 
@@ -57,12 +57,12 @@ class TestCategoriesPoolsDataInner(unittest.TestCase):
                     reserve_in_usd = '', 
                     h24_volume_usd = '', 
                     h24_tx_count = 56, ),
-                relationships = coingecko-sdk.models.categories_pools_data_inner_relationships.CategoriesPools_data_inner_relationships(
-                    network = coingecko-sdk.models.pool_data_inner_relationships_base_token.Pool_data_inner_relationships_base_token(
-                        data = coingecko-sdk.models.pool_data_inner_relationships_base_token_data.Pool_data_inner_relationships_base_token_data(
+                relationships = coingecko_sdk.models.categories_pools_data_inner_relationships.CategoriesPools_data_inner_relationships(
+                    network = coingecko_sdk.models.pool_data_inner_relationships_base_token.Pool_data_inner_relationships_base_token(
+                        data = coingecko_sdk.models.pool_data_inner_relationships_base_token_data.Pool_data_inner_relationships_base_token_data(
                             id = '', 
                             type = '', ), ), 
-                    dex = coingecko-sdk.models.pool_data_inner_relationships_base_token.Pool_data_inner_relationships_base_token(), 
+                    dex = coingecko_sdk.models.pool_data_inner_relationships_base_token.Pool_data_inner_relationships_base_token(), 
                     base_token = , 
                     quote_token = , )
             )

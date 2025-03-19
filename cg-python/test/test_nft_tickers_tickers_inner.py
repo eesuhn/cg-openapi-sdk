@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nft_tickers_tickers_inner import NFTTickersTickersInner
+from coingecko_sdk.models.nft_tickers_tickers_inner import NFTTickersTickersInner
 
 class TestNFTTickersTickersInner(unittest.TestCase):
     """NFTTickersTickersInner unit test stubs"""

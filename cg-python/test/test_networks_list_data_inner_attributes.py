@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.networks_list_data_inner_attributes import NetworksListDataInnerAttributes
+from coingecko_sdk.models.networks_list_data_inner_attributes import NetworksListDataInnerAttributes
 
 class TestNetworksListDataInnerAttributes(unittest.TestCase):
     """NetworksListDataInnerAttributes unit test stubs"""

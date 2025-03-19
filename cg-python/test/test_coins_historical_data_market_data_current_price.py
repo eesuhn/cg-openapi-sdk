@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_historical_data_market_data_current_price import CoinsHistoricalDataMarketDataCurrentPrice
+from coingecko_sdk.models.coins_historical_data_market_data_current_price import CoinsHistoricalDataMarketDataCurrentPrice
 
 class TestCoinsHistoricalDataMarketDataCurrentPrice(unittest.TestCase):
     """CoinsHistoricalDataMarketDataCurrentPrice unit test stubs"""

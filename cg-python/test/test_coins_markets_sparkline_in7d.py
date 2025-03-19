@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_markets_sparkline_in7d import CoinsMarketsSparklineIn7d
+from coingecko_sdk.models.coins_markets_sparkline_in7d import CoinsMarketsSparklineIn7d
 
 class TestCoinsMarketsSparklineIn7d(unittest.TestCase):
     """CoinsMarketsSparklineIn7d unit test stubs"""

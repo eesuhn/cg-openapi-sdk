@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.ohlcv_meta import OHLCVMeta
+from coingecko_sdk.models.ohlcv_meta import OHLCVMeta
 
 class TestOHLCVMeta(unittest.TestCase):
     """OHLCVMeta unit test stubs"""
@@ -35,12 +35,12 @@ class TestOHLCVMeta(unittest.TestCase):
         model = OHLCVMeta()
         if include_optional:
             return OHLCVMeta(
-                base = coingecko-sdk.models.ohlcv_meta_base.OHLCV_meta_base(
+                base = coingecko_sdk.models.ohlcv_meta_base.OHLCV_meta_base(
                     address = '', 
                     name = '', 
                     symbol = '', 
                     coingecko_coin_id = '', ),
-                quote = coingecko-sdk.models.ohlcv_meta_base.OHLCV_meta_base(
+                quote = coingecko_sdk.models.ohlcv_meta_base.OHLCV_meta_base(
                     address = '', 
                     name = '', 
                     symbol = '', 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_markets import CoinsMarkets
+from coingecko_sdk.models.coins_markets import CoinsMarkets
 
 class TestCoinsMarkets(unittest.TestCase):
     """CoinsMarkets unit test stubs"""
@@ -62,7 +62,7 @@ class TestCoinsMarkets(unittest.TestCase):
                 roi = '',
                 last_updated = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 price_change_percentage_1h = 1.337,
-                sparkline_in_7d = coingecko-sdk.models.coins_markets_sparkline_in_7d.CoinsMarkets_sparkline_in_7d(
+                sparkline_in_7d = coingecko_sdk.models.coins_markets_sparkline_in_7d.CoinsMarkets_sparkline_in_7d(
                     price = [
                         1.337
                         ], )

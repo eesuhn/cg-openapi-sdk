@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nfts_markets_inner_floor_price24h_percentage_change import NFTsMarketsInnerFloorPrice24hPercentageChange
+from coingecko_sdk.models.nfts_markets_inner_floor_price24h_percentage_change import NFTsMarketsInnerFloorPrice24hPercentageChange
 
 class TestNFTsMarketsInnerFloorPrice24hPercentageChange(unittest.TestCase):
     """NFTsMarketsInnerFloorPrice24hPercentageChange unit test stubs"""

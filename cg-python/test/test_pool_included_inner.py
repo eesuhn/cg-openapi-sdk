@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.pool_included_inner import PoolIncludedInner
+from coingecko_sdk.models.pool_included_inner import PoolIncludedInner
 
 class TestPoolIncludedInner(unittest.TestCase):
     """PoolIncludedInner unit test stubs"""
@@ -37,7 +37,7 @@ class TestPoolIncludedInner(unittest.TestCase):
             return PoolIncludedInner(
                 id = '',
                 type = '',
-                attributes = coingecko-sdk.models.pool_included_inner_attributes.Pool_included_inner_attributes(
+                attributes = coingecko_sdk.models.pool_included_inner_attributes.Pool_included_inner_attributes(
                     address = '', 
                     name = '', 
                     symbol = '', 

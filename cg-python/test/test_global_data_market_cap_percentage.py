@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.global_data_market_cap_percentage import GlobalDataMarketCapPercentage
+from coingecko_sdk.models.global_data_market_cap_percentage import GlobalDataMarketCapPercentage
 
 class TestGlobalDataMarketCapPercentage(unittest.TestCase):
     """GlobalDataMarketCapPercentage unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.token_data import TokenData
+from coingecko_sdk.models.token_data import TokenData
 
 class TestTokenData(unittest.TestCase):
     """TokenData unit test stubs"""
@@ -37,7 +37,7 @@ class TestTokenData(unittest.TestCase):
             return TokenData(
                 id = '',
                 type = '',
-                attributes = coingecko-sdk.models.token_data_attributes.Token_data_attributes(
+                attributes = coingecko_sdk.models.token_data_attributes.Token_data_attributes(
                     address = '', 
                     name = '', 
                     symbol = '', 
@@ -48,13 +48,13 @@ class TestTokenData(unittest.TestCase):
                     price_usd = '', 
                     fdv_usd = '', 
                     total_reserve_in_usd = '', 
-                    volume_usd = coingecko-sdk.models.token_data_attributes_volume_usd.Token_data_attributes_volume_usd(
+                    volume_usd = coingecko_sdk.models.token_data_attributes_volume_usd.Token_data_attributes_volume_usd(
                         h24 = '', ), 
                     market_cap_usd = '', ),
-                relationships = coingecko-sdk.models.token_data_relationships.Token_data_relationships(
-                    top_pools = coingecko-sdk.models.token_data_relationships_top_pools.Token_data_relationships_top_pools(
+                relationships = coingecko_sdk.models.token_data_relationships.Token_data_relationships(
+                    top_pools = coingecko_sdk.models.token_data_relationships_top_pools.Token_data_relationships_top_pools(
                         data = [
-                            coingecko-sdk.models.pool_data_inner_relationships_base_token_data.Pool_data_inner_relationships_base_token_data(
+                            coingecko_sdk.models.pool_data_inner_relationships_base_token_data.Pool_data_inner_relationships_base_token_data(
                                 id = '', 
                                 type = '', )
                             ], ), )

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.key import Key
+from coingecko_sdk.models.key import Key
 
 class TestKey(unittest.TestCase):
     """Key unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_market_data_ath import CoinsDataBaseMarketDataAth
+from coingecko_sdk.models.coins_data_base_market_data_ath import CoinsDataBaseMarketDataAth
 
 class TestCoinsDataBaseMarketDataAth(unittest.TestCase):
     """CoinsDataBaseMarketDataAth unit test stubs"""

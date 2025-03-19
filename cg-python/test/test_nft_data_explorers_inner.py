@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.nft_data_explorers_inner import NFTDataExplorersInner
+from coingecko_sdk.models.nft_data_explorers_inner import NFTDataExplorersInner
 
 class TestNFTDataExplorersInner(unittest.TestCase):
     """NFTDataExplorersInner unit test stubs"""

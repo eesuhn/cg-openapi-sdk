@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.nft_data_ath_date import NFTDataAthDate
+from coingecko_sdk.models.nft_data_ath_date import NFTDataAthDate
 
 # TODO update the JSON string below
 json = "{}"

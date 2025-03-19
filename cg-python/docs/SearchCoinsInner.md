@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.search_coins_inner import SearchCoinsInner
+from coingecko_sdk.models.search_coins_inner import SearchCoinsInner
 
 # TODO update the JSON string below
 json = "{}"

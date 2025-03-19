@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.ohlcv_data import OHLCVData
+from coingecko_sdk.models.ohlcv_data import OHLCVData
 
 class TestOHLCVData(unittest.TestCase):
     """OHLCVData unit test stubs"""
@@ -37,7 +37,7 @@ class TestOHLCVData(unittest.TestCase):
             return OHLCVData(
                 id = '',
                 type = '',
-                attributes = coingecko-sdk.models.ohlcv_data_attributes.OHLCV_data_attributes(
+                attributes = coingecko_sdk.models.ohlcv_data_attributes.OHLCV_data_attributes(
                     ohlcv_list = [
                         [
                             1.337

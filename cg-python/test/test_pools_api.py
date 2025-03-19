@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.pools_api import PoolsApi
+from coingecko_sdk.api.pools_api import PoolsApi
 
 
 class TestPoolsApi(unittest.TestCase):

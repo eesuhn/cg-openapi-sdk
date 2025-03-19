@@ -1,4 +1,4 @@
-# coingecko-sdk.DerivativesApi
+# coingecko_sdk.DerivativesApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -23,14 +23,14 @@ This endpoint allows you to **query all the derivatives exchanges with related d
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.derivatives_exchanges import DerivativesExchanges
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.derivatives_exchanges import DerivativesExchanges
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -52,9 +52,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.DerivativesApi(api_client)
+    api_instance = coingecko_sdk.DerivativesApi(api_client)
     order = 'order_example' # str | use this to sort the order of responses, default: open_interest_btc_desc (optional)
     per_page = 3.4 # float | total results per page (optional)
     page = 3.4 # float | page through results, default: 1 (optional)
@@ -113,14 +113,14 @@ This endpoint allows you to **query the derivatives exchange’s related data (I
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.derivatives_exchanges_id import DerivativesExchangesID
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.derivatives_exchanges_id import DerivativesExchangesID
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -142,9 +142,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.DerivativesApi(api_client)
+    api_instance = coingecko_sdk.DerivativesApi(api_client)
     id = 'binance_futures' # str | derivative exchange ID <br> *refers to [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
     include_tickers = 'include_tickers_example' # str | include tickers data (optional)
 
@@ -201,14 +201,14 @@ This endpoint allows you to **query all the derivatives exchanges with ID and na
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.derivatives_exchanges_list import DerivativesExchangesList
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.derivatives_exchanges_list import DerivativesExchangesList
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -230,9 +230,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.DerivativesApi(api_client)
+    api_instance = coingecko_sdk.DerivativesApi(api_client)
 
     try:
         # Derivatives Exchanges List (ID Map)
@@ -283,14 +283,14 @@ This endpoint allows you to **query all the tickers from derivatives exchanges o
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.derivatives_tickers_list import DerivativesTickersList
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.derivatives_tickers_list import DerivativesTickersList
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -312,9 +312,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.DerivativesApi(api_client)
+    api_instance = coingecko_sdk.DerivativesApi(api_client)
 
     try:
         # Derivatives Tickers List

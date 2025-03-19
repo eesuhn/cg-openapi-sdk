@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_historical_data_market_data_total_volume import CoinsHistoricalDataMarketDataTotalVolume
+from coingecko_sdk.models.coins_historical_data_market_data_total_volume import CoinsHistoricalDataMarketDataTotalVolume
 
 class TestCoinsHistoricalDataMarketDataTotalVolume(unittest.TestCase):
     """CoinsHistoricalDataMarketDataTotalVolume unit test stubs"""

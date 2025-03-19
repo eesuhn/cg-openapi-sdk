@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_historical_data_market_data_market_cap import CoinsHistoricalDataMarketDataMarketCap
+from coingecko_sdk.models.coins_historical_data_market_data_market_cap import CoinsHistoricalDataMarketDataMarketCap
 
 class TestCoinsHistoricalDataMarketDataMarketCap(unittest.TestCase):
     """CoinsHistoricalDataMarketDataMarketCap unit test stubs"""

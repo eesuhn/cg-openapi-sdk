@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.search_nfts_inner import SearchNftsInner
+from coingecko_sdk.models.search_nfts_inner import SearchNftsInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_market_data_price_change_percentage200d_in_currency import CoinsDataBaseMarketDataPriceChangePercentage200dInCurrency
+from coingecko_sdk.models.coins_data_base_market_data_price_change_percentage200d_in_currency import CoinsDataBaseMarketDataPriceChangePercentage200dInCurrency
 
 class TestCoinsDataBaseMarketDataPriceChangePercentage200dInCurrency(unittest.TestCase):
     """CoinsDataBaseMarketDataPriceChangePercentage200dInCurrency unit test stubs"""

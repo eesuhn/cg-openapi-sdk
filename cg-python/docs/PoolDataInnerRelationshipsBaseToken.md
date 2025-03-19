@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from coingecko-sdk.models.pool_data_inner_relationships_base_token import PoolDataInnerRelationshipsBaseToken
+from coingecko_sdk.models.pool_data_inner_relationships_base_token import PoolDataInnerRelationshipsBaseToken
 
 # TODO update the JSON string below
 json = "{}"

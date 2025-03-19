@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.trending_search_coins_inner_data import TrendingSearchCoinsInnerData
+from coingecko_sdk.models.trending_search_coins_inner_data import TrendingSearchCoinsInnerData
 
 class TestTrendingSearchCoinsInnerData(unittest.TestCase):
     """TrendingSearchCoinsInnerData unit test stubs"""
@@ -37,7 +37,7 @@ class TestTrendingSearchCoinsInnerData(unittest.TestCase):
             return TrendingSearchCoinsInnerData(
                 price = 1.337,
                 price_btc = '',
-                price_change_percentage_24h = coingecko-sdk.models.trending_search_coins_inner_data_price_change_percentage_24h.TrendingSearch_coins_inner_data_price_change_percentage_24h(
+                price_change_percentage_24h = coingecko_sdk.models.trending_search_coins_inner_data_price_change_percentage_24h.TrendingSearch_coins_inner_data_price_change_percentage_24h(
                     btc = 1.337, 
                     usd = 1.337, ),
                 market_cap = '',

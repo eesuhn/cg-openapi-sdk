@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.search_nfts_inner import SearchNftsInner
+from coingecko_sdk.models.search_nfts_inner import SearchNftsInner
 
 class TestSearchNftsInner(unittest.TestCase):
     """SearchNftsInner unit test stubs"""

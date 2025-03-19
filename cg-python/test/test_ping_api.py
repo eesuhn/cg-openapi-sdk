@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.ping_api import PingApi
+from coingecko_sdk.api.ping_api import PingApi
 
 
 class TestPingApi(unittest.TestCase):

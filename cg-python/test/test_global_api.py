@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.api.global_api import GlobalApi
+from coingecko_sdk.api.global_api import GlobalApi
 
 
 class TestGlobalApi(unittest.TestCase):

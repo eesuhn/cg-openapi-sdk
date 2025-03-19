@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.coins_data_base_tickers_inner_converted_volume import CoinsDataBaseTickersInnerConvertedVolume
+from coingecko_sdk.models.coins_data_base_tickers_inner_converted_volume import CoinsDataBaseTickersInnerConvertedVolume
 
 class TestCoinsDataBaseTickersInnerConvertedVolume(unittest.TestCase):
     """CoinsDataBaseTickersInnerConvertedVolume unit test stubs"""

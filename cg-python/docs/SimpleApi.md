@@ -1,4 +1,4 @@
-# coingecko-sdk.SimpleApi
+# coingecko_sdk.SimpleApi
 
 All URIs are relative to *https://pro-api.coingecko.com/api/v3*
 
@@ -23,14 +23,14 @@ This endpoint allows you to **get token price based on the provided token contra
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.onchain_simple_price import OnchainSimplePrice
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.onchain_simple_price import OnchainSimplePrice
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -52,9 +52,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.SimpleApi(api_client)
+    api_instance = coingecko_sdk.SimpleApi(api_client)
     network = 'eth' # str | network ID <br> *refers to [/networks](/reference/networks-list)
     addresses = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' # str | token contract address, comma-separated if more than one token contract address
     include_market_cap = True # bool | include market capitalization, default: false (optional)
@@ -119,14 +119,14 @@ This endpoint allows you to **query the prices of one or more coins by using the
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.simple_price import SimplePrice
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.simple_price import SimplePrice
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -148,9 +148,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.SimpleApi(api_client)
+    api_instance = coingecko_sdk.SimpleApi(api_client)
     ids = 'bitcoin' # str | coins' IDs, comma-separated if querying more than 1 coin. <br> *refers to [`/coins/list`](/reference/coins-list).
     vs_currencies = 'usd' # str | target currency of coins, comma-separated if querying more than 1 currency. <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
     include_market_cap = True # bool | include market capitalization, default: false (optional)
@@ -217,13 +217,13 @@ This endpoint allows you to **query all the supported currencies on CoinGecko**
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -245,9 +245,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.SimpleApi(api_client)
+    api_instance = coingecko_sdk.SimpleApi(api_client)
 
     try:
         # Supported Currencies List
@@ -298,14 +298,14 @@ This endpoint allows you to **query a token price by using token contract addres
 * Api Key Authentication (demoKeyAuth):
 
 ```python
-import coingecko-sdk
-from coingecko-sdk.models.simple_token_price import SimpleTokenPrice
-from coingecko-sdk.rest import ApiException
+import coingecko_sdk
+from coingecko_sdk.models.simple_token_price import SimpleTokenPrice
+from coingecko_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://pro-api.coingecko.com/api/v3
 # See configuration.py for a list of all supported configuration parameters.
-configuration = coingecko-sdk.Configuration(
+configuration = coingecko_sdk.Configuration(
     host = "https://pro-api.coingecko.com/api/v3"
 )
 
@@ -327,9 +327,9 @@ configuration.api_key['demoKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['demoKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with coingecko-sdk.ApiClient(configuration) as api_client:
+with coingecko_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = coingecko-sdk.SimpleApi(api_client)
+    api_instance = coingecko_sdk.SimpleApi(api_client)
     id = 'ethereum' # str | asset platform's ID <br> *refers to [`/asset_platforms`](/reference/asset-platforms-list).
     contract_addresses = '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599' # str | the contract addresses of tokens, comma-separated if querying more than 1 token's contract address
     vs_currencies = 'usd' # str | target currency of coins, comma-separated if querying more than 1 currency. <br> *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).

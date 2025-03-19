@@ -14,7 +14,7 @@
 
 import unittest
 
-from coingecko-sdk.models.pool_data_inner_relationships_base_token import PoolDataInnerRelationshipsBaseToken
+from coingecko_sdk.models.pool_data_inner_relationships_base_token import PoolDataInnerRelationshipsBaseToken
 
 class TestPoolDataInnerRelationshipsBaseToken(unittest.TestCase):
     """PoolDataInnerRelationshipsBaseToken unit test stubs"""
@@ -35,7 +35,7 @@ class TestPoolDataInnerRelationshipsBaseToken(unittest.TestCase):
         model = PoolDataInnerRelationshipsBaseToken()
         if include_optional:
             return PoolDataInnerRelationshipsBaseToken(
-                data = coingecko-sdk.models.pool_data_inner_relationships_base_token_data.Pool_data_inner_relationships_base_token_data(
+                data = coingecko_sdk.models.pool_data_inner_relationships_base_token_data.Pool_data_inner_relationships_base_token_data(
                     id = '', 
                     type = '', )
             )
