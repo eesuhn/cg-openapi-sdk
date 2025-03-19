@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "CoinGecko API",
+    "version": "v3.1.1"
+  },
+  "servers": [
+    {
+      "url": "https://pro-api.coingecko.com/api/v3"
+    },
+    {
+      "url": "https://api.coingecko.com/api/v3"
+    }
+  ],
+  "security": [
+    {
+      "proKeyAuth": []
+    },
+    {
+      "demoKeyAuth": []
+    }
+  ],
+  "paths": {},
+  "components": {
+    "securitySchemes": {
+      "proKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-cg-pro-api-key"
+      },
+      "demoKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-cg-demo-api-key"
+      }
+    },
+    "schemas": {}
+  },
+  "x-readme": {
+    "explorer-enabled": true,
+    "proxy-enabled": true
+  }
+}
