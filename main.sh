@@ -11,14 +11,14 @@ show_help() {
 Usage: $0 [command] [options]
 
 Commands:
-generate  Generate code using OpenAPI generator
-clean     Clean the target directory
+generate  Generates code using the OpenAPI Generator
+clean     Removes all files in the output directory except .gitkeep
 
 Options:
---out=OUT    Target directory (default: $DEFAULT_OUT)
---gen=GEN    Generator (default: $DEFAULT_GEN)
---conf=CONF  Configuration file (default: $DEFAULT_CONF)
---help       Display this help message
+--out=OUT    Output directory for generated code (default: $DEFAULT_OUT)
+--gen=GEN    Generator name (default: $DEFAULT_GEN)
+--conf=CONF  OpenAPI Generator config file (default: $DEFAULT_CONF)
+--help       Display help message
 EOF
     exit 0
 }
