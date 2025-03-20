@@ -21,16 +21,38 @@ Below are the links to the available SDK repositories:
 > - `openapi-generator` CLI must be installed. See [installation guide](https://openapi-generator.tech/docs/installation).
 > - [`openapi-parser`](./openapi-parser/README.md) must be run beforehand to generate the latest merged OpenAPI 3.0 spec.
 
+You can run commands in two ways:
+
+### 1. Using the [`Makefile`](./Makefile)
+
+Run commonly used commands. It updates submodules and then calls [`make.sh`](./make.sh) to perform generation:
+
+- Update all submodules:
+
+    ```bash
+    make submodule
+    ```
+
+- Example: Generate Python SDK
+
+    ```bash
+    make cg-python
+    ```
+
+    ⚠️ Dynamically handles any target following the `cg-` prefix.
+
+### 2. Using the [`main.sh`](./main.sh) script
+
 ```bash
 ./main.sh [command] [options]
 ```
 
-### Commands
+#### Commands
 
 - `generate` — Generates code using the OpenAPI Generator
 - `clean` — Removes all files in the output directory except `.gitkeep`
 
-### Options
+#### Options
 
 - `--out=OUT` — Output directory for generated code (default: `out`)
 - `--gen=GEN` — Generator name, see the [generator List](https://openapi-generator.tech/docs/generators) (default: `python`)
@@ -38,7 +60,7 @@ Below are the links to the available SDK repositories:
     - ⚠️ Config files **must** be located in the [`openapi-config/`](./openapi-config/) directory
 - `--help` — Display help message
 
-### Example
+#### Example
 
 ```bash
 ./main.sh generate --out=cg-python --gen=python --conf=cg-python.json
