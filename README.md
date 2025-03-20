@@ -1,4 +1,4 @@
-# `cg-openapi-sdk` — OpenAPI Code Generation Script
+# `cg-openapi-sdk` — OpenAPI SDK Generation Script
 
 Automates client SDK generation from OpenAPI 3.0 specs using the [OpenAPI Generator CLI](https://openapi-generator.tech/).<br>
 Supports generating client code with configurable language and settings.
@@ -13,6 +13,7 @@ git submodule update --init --recursive
 
 Below are the links to the available SDK repositories:
 - Python — [cg-python](https://github.com/eesuhn/cg-python)
+- TypeScript/Node — [cg-typescript-node](https://github.com/eesuhn/cg-typescript-node)
 
 ## Usage
 

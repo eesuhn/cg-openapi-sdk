@@ -1,3 +1,6 @@
 [submodule "cg-python"]
 	path = cg-python
 	url = https://github.com/eesuhn/cg-python.git
+[submodule "cg-typescript-node"]
+	path = cg-typescript-node
+	url = https://github.com/eesuhn/cg-typescript-node.git
