@@ -3,7 +3,7 @@
 ROOT=$(dirname "$(readlink -f "$0")")
 
 DEFAULT_TARGET="out"
-DEFAULT_LANGUAGE="python"
+DEFAULT_GENERATOR="python"
 DEFAULT_CONFIG="default-config.json"
 
 show_help() {
@@ -11,13 +11,13 @@ show_help() {
 Usage: $0 [command] [options]
 
 Commands:
-clean     Clean the target directory
 generate  Generate code using OpenAPI generator
+clean     Clean the target directory
 
 Options:
---target=DIR      Target directory (default: $DEFAULT_TARGET)
---language=LANG   Generator language (default: $DEFAULT_LANGUAGE)
---config=CONFIG   Generator configuration file (default: $DEFAULT_CONFIG)
+--target=TARGET   Target directory (default: $DEFAULT_TARGET)
+--generator=GEN   Generator (default: $DEFAULT_GENERATOR)
+--config=CONFIG   Configuration file (default: $DEFAULT_CONFIG)
 --help            Display this help message
 EOF
     exit 0
@@ -25,7 +25,7 @@ EOF
 
 if [[ $# -gt 0 ]]; then
     case $1 in
-        clean|generate)
+        generate|clean)
             COMMAND=$1
             shift
             ;;
@@ -41,7 +41,7 @@ if [[ $# -gt 0 ]]; then
 fi
 
 TARGET=${TARGET:-$DEFAULT_TARGET}
-LANGUAGE=${LANGUAGE:-$DEFAULT_LANGUAGE}
+GENERATOR=${GENERATOR:-$DEFAULT_GENERATOR}
 CONFIG=${CONFIG:-$DEFAULT_CONFIG}
 
 while [[ $# -gt 0 ]]; do
@@ -49,8 +49,8 @@ while [[ $# -gt 0 ]]; do
         --target=*)
             TARGET="${1#*=}"
             ;;
-        --language=*)
-            LANGUAGE="${1#*=}"
+        --generator=*)
+            GENERATOR="${1#*=}"
             ;;
         --config=*)
             CONFIG="${1#*=}"
@@ -71,14 +71,14 @@ TARGET="$ROOT/$TARGET"
 
 clean() {
     if [[ -d "$TARGET" ]]; then
-        find "$TARGET" -mindepth 1 -not -name '.gitkeep' -delete 2>/dev/null || find "$TARGET" -mindepth 1 -not -name '.gitkeep' -exec rm -rf {} \; 2>/dev/null
+        find "$TARGET" -mindepth 1 -not -name '.gitkeep' -exec rm -rf {} \; 2>/dev/null
     fi
 }
 
 generate() {
     openapi-generator generate \
         -i "$ROOT/openapi-parser/app/docs/coingecko.json" \
-        -g "$LANGUAGE" \
+        -g "$GENERATOR" \
         -o "$TARGET" \
         -c "$ROOT/openapi-config/$CONFIG"
     rm -rf \
@@ -89,15 +89,15 @@ generate() {
 }
 
 case $COMMAND in
-    clean)
-        clean
-        ;;
     generate)
         generate
         ;;
+    clean)
+        clean
+        ;;
     "")
         echo "Error: No command specified."
-        echo "Usage: $0 [clean|generate] [options]"
+        echo "Usage: $0 [generate|clean] [options]"
         echo "Use --help for more information"
         ;;
 esac
