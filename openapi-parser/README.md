@@ -1,4 +1,4 @@
-# `openapi-parse` — OpenAPI Docs Merger
+# `openapi-parser` — OpenAPI Docs Merger
 Generates a merged OpenAPI JSON spec by fetching and combining multiple OpenAPI sources, specifically [`coingecko-pro`](https://docs.coingecko.com/openapi/6584ea6ce07e130056b1af99) and [`geckoterminal`](https://docs.coingecko.com/openapi/6585013ec2907b0031346aa4).
 
 ## How it Works
