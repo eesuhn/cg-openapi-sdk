@@ -2,9 +2,9 @@
 
 ROOT=$(dirname "$(readlink -f "$0")")
 
-DEFAULT_TARGET="out"
-DEFAULT_GENERATOR="python"
-DEFAULT_CONFIG="default-config.json"
+DEFAULT_OUT="out"
+DEFAULT_GEN="python"
+DEFAULT_CONF="default-config.json"
 
 show_help() {
     cat << EOF
@@ -15,10 +15,10 @@ generate  Generate code using OpenAPI generator
 clean     Clean the target directory
 
 Options:
---target=TARGET   Target directory (default: $DEFAULT_TARGET)
---generator=GEN   Generator (default: $DEFAULT_GENERATOR)
---config=CONFIG   Configuration file (default: $DEFAULT_CONFIG)
---help            Display this help message
+--out=OUT    Target directory (default: $DEFAULT_OUT)
+--gen=GEN    Generator (default: $DEFAULT_GEN)
+--conf=CONF  Configuration file (default: $DEFAULT_CONF)
+--help       Display this help message
 EOF
     exit 0
 }
@@ -40,20 +40,20 @@ if [[ $# -gt 0 ]]; then
     esac
 fi
 
-TARGET=${TARGET:-$DEFAULT_TARGET}
-GENERATOR=${GENERATOR:-$DEFAULT_GENERATOR}
-CONFIG=${CONFIG:-$DEFAULT_CONFIG}
+OUT=${OUT:-$DEFAULT_OUT}
+GEN=${GEN:-$DEFAULT_GEN}
+CONF=${CONF:-$DEFAULT_CONF}
 
 while [[ $# -gt 0 ]]; do
     case $1 in
-        --target=*)
-            TARGET="${1#*=}"
+        --out=*)
+            OUT="${1#*=}"
             ;;
-        --generator=*)
-            GENERATOR="${1#*=}"
+        --gen=*)
+            GEN="${1#*=}"
             ;;
-        --config=*)
-            CONFIG="${1#*=}"
+        --conf=*)
+            CONF="${1#*=}"
             ;;
         --help)
             show_help
@@ -67,25 +67,29 @@ while [[ $# -gt 0 ]]; do
     shift
 done
 
-TARGET="$ROOT/$TARGET"
+OUT="$ROOT/$OUT"
 
 clean() {
-    if [[ -d "$TARGET" ]]; then
-        find "$TARGET" -mindepth 1 -not -name '.gitkeep' -exec rm -rf {} \; 2>/dev/null
+    if [[ -d "$OUT" ]]; then
+        find "$OUT" -mindepth 1 -not -name '.gitkeep' -exec rm -rf {} \; 2>/dev/null
     fi
+}
+
+debloat() {
+    rm -rf \
+        "$OUT/.github" \
+        "$OUT/.gitlab-ci.yml" \
+        "$OUT/.travis.yml" \
+        "$OUT/git_push.sh"
 }
 
 generate() {
     openapi-generator generate \
         -i "$ROOT/openapi-parser/app/docs/coingecko.json" \
-        -g "$GENERATOR" \
-        -o "$TARGET" \
-        -c "$ROOT/openapi-config/$CONFIG"
-    rm -rf \
-        "$TARGET/.github" \
-        "$TARGET/.gitlab-ci.yml" \
-        "$TARGET/.travis.yml" \
-        "$TARGET/git_push.sh"
+        -g "$GEN" \
+        -o "$OUT" \
+        -c "$ROOT/openapi-config/$CONF"
+    debloat
 }
 
 case $COMMAND in

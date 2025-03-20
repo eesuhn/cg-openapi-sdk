@@ -5,6 +5,10 @@ from .utils import (
 )
 
 
+GECKOTERMINAL: str = "6585013ec2907b0031346aa4"
+COINGECKO_PRO: str = "6584ea6ce07e130056b1af99"
+
+
 class Main:
     def __init__(self) -> None:
         self.geckoterminal = self.get_gt_json()
@@ -14,12 +18,12 @@ class Main:
     def get_gt_json(
         self
     ) -> dict:
-        return get_openapi_json("6585013ec2907b0031346aa4")
+        return get_openapi_json(GECKOTERMINAL)
 
     def get_pro_json(
         self
     ) -> dict:
-        return get_openapi_json("6584ea6ce07e130056b1af99")
+        return get_openapi_json(COINGECKO_PRO)
 
     def merge_oas_docs(
         self
