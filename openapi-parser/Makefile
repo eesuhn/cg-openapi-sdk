@@ -10,6 +10,7 @@ venv: $(VENV)/bin/activate
 $(VENV)/bin/activate: ./$(CONFIG)/requirements.txt
 	@python3 -m venv $(VENV)
 	@./$(VENV)/bin/pip install -r ./$(CONFIG)/requirements.txt
+	@bun install
 
 run: venv
 	@./$(VENV)/bin/python3 $(MAIN)
@@ -28,4 +29,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all venv run lint clean fclean re
+doc-lint: venv
+	@bunx redocly lint $(PACKAGE)/docs/coingecko.json
+
+.PHONY: all venv run lint clean fclean re doc-lint
