@@ -11,8 +11,10 @@ Fetch the latest changes from each individual repository by running:
 git submodule update --init --recursive
 ```
 
-Below are the links to the available SDK repositories:
+Below are the links to the available SDK repositories and their demo playground:
+
 - Python — [cg-python](https://github.com/eesuhn/cg-python)
+    - [cg-python-demo](https://github.com/eesuhn/cg-python-demo)
 - TypeScript/Node — [cg-typescript-node](https://github.com/eesuhn/cg-typescript-node)
 
 ## Usage

@@ -10,7 +10,7 @@ openapi-parser
 ├── README.md
 ├── app
 │   ├── __init__.py
-│   ├── docs  # 👈 OpenAPI specs (default and merged)
+│   ├── docs     # 👈 OpenAPI specs
 │   ├── main.py  # 👈 Main logic
 │   └── utils.py
 └── main.py
@@ -25,9 +25,17 @@ openapi-parser
 
 ## Usage
 
-```bash
-make run
-```
+1. Fetch + Merge OpenAPI specs
+
+    ```bash
+    make run
+    ```
+
+2. Lint merged OpenAPI specs using [Redocly](https://redocly.com/docs/cli/commands/lint)
+
+    ```bash
+    make doc-lint
+    ```
 
 ### Output
 
